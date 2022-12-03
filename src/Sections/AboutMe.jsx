@@ -31,6 +31,9 @@ const AboutMe = () => {
       color="black"
       bgGradient="linear(to-r, #E7E6EF,  #009090)"
     >
+      <Heading as="h5" size="sm" textAlign="center" mb="0px" color="blue.600">
+        Get To Know
+      </Heading>
       <Heading textAlign="center" mb="20px" color="blue.600">
         About Me
       </Heading>

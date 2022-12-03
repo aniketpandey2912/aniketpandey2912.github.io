@@ -1,5 +1,5 @@
-import logo from "./logo.svg";
-import "./App.css";
+// import logo from "./logo.svg";
+// import "./App.css";
 import { Box } from "@chakra-ui/react";
 import Navbar from "./Components/Navbar";
 import Home from "./Sections/Home";
