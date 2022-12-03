@@ -10,7 +10,9 @@ const Home = () => {
       id="home"
       bgGradient="linear(to-l, #E7E6EF,  #009090)"
     >
-      <Heading textAlign="center" color="blue.600">Home</Heading>
+      <Heading textAlign="center" color="blue.600" mb="50px">
+        Home
+      </Heading>
     </Box>
   );
 };

@@ -2,7 +2,7 @@ import { Button } from "@chakra-ui/react";
 import React from "react";
 import { GrDownload } from "react-icons/gr";
 
-const MyButton = () => {
+export const ResumeButton = () => {
   return (
     <Button
       type="download"
@@ -17,4 +17,19 @@ const MyButton = () => {
   );
 };
 
-export default MyButton;
+export const ProjectButton = ({ text, btnIcon }) => {
+  return (
+    <Button
+      type="download"
+      // bg="teal"
+      colorScheme="teal"
+      variant="solid"
+      size={{ base: "xs", sm: "sm", md: "md", lg: "lg" }}
+      w="100%"
+      mt="15px"
+      rightIcon={btnIcon}
+    >
+      {text}
+    </Button>
+  );
+};

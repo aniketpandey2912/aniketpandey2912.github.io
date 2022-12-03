@@ -10,7 +10,7 @@ const Skills = () => {
       py="100px"
       bgGradient="linear(to-l, #E7E6EF,  #009090)"
     >
-      <Heading textAlign="center" color="blue.600">Skills</Heading>
+      <Heading textAlign="center" color="blue.600" mb="50px">Skills</Heading>
     </Box>
   );
 };

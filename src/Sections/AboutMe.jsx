@@ -1,17 +1,7 @@
-import { GrDownload } from "react-icons/gr";
-import {
-  Box,
-  Button,
-  Center,
-  Flex,
-  Heading,
-  Image,
-  Input,
-  Square,
-  Text,
-} from "@chakra-ui/react";
+// import { GrDownload } from "react-icons/gr";
+import { Box, Flex, Heading, Image, Square, Text } from "@chakra-ui/react";
 import React, { useEffect } from "react";
-import MyButton from "../Components/MyButton";
+import { ResumeButton } from "../Components/MyButton";
 
 const AboutMe = () => {
   const name = "Aniket Pandey";
@@ -24,17 +14,14 @@ const AboutMe = () => {
   return (
     <Box
       border="1px solid black"
-      h="100vh"
+      h="100%"
       id="about"
       py="100px"
       // bg="brown"
       color="black"
       bgGradient="linear(to-r, #E7E6EF,  #009090)"
     >
-      <Heading as="h5" size="sm" textAlign="center" mb="0px" color="blue.600">
-        Get To Know
-      </Heading>
-      <Heading textAlign="center" mb="20px" color="blue.600">
+      <Heading textAlign="center" mb="50px" color="blue.600">
         About Me
       </Heading>
       <Flex
@@ -54,12 +41,12 @@ const AboutMe = () => {
           px="1%"
         >
           <Image
-            src="https://avatars.githubusercontent.com/u/107461782?v=4"
+            src="https://github.com/aniketpandey2912/aniketpandey2912.github.io/blob/master/src/Sections/Images/ProfilePic1.jpeg?raw=true"
             alt="prof-avatar"
-            borderRadius="50%"
+            // borderRadius="50%"
             h={{ base: "100px", sm: "150px", md: "150px", lg: "230px" }}
           />
-          <MyButton />
+          <ResumeButton />
         </Square>
 
         {/* Description box */}
