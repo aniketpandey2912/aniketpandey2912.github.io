@@ -9,23 +9,28 @@ const Projects = () => {
       h="100%"
       id="projects"
       py="100px"
-      bgGradient="linear(to-r, #E7E6EF,  #009090)"
+      bgColor="#6B728E"
     >
-      <Heading textAlign="center" color="blue.600" mb="50px">
+      <Heading
+        textAlign="center"
+        mb="50px"
+        fontSize="6xl"
+        fontWeight="extrabold"
+        color="whiteAlpha.700"
+      >
         Projects
       </Heading>
       <Grid
         px="30px"
         justifyContent="space-between"
         alignItems="center"
-        // direction={{ base: "column", sm: "column", md: "column", lg: "row" }}
         gridTemplateColumns={{
           base: "repeat(1,1fr)",
           sm: "repeat(2,1fr)",
           md: "repeat(3,1fr)",
           lg: "repeat(3,1fr)",
         }}
-        gap="5%"
+        gap={{ base: "4%", sm: "5%" }}
       >
         <ProjectCards
           title="Cult.fit"

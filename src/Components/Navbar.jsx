@@ -1,14 +1,8 @@
-import { GiSkills } from "react-icons/gi"
-import { FaHome, FaProjectDiagram } from "react-icons/fa"
-import { SiAboutdotme } from "react-icons/si"
-import { MdContacts } from "react-icons/md"
-import {
-  AddIcon,
-  EditIcon,
-  ExternalLinkIcon,
-  HamburgerIcon,
-  RepeatIcon,
-} from "@chakra-ui/icons";
+import { GiSkills } from "react-icons/gi";
+import { FaHome, FaProjectDiagram } from "react-icons/fa";
+import { SiAboutdotme } from "react-icons/si";
+import { MdContacts } from "react-icons/md";
+import { EditIcon, HamburgerIcon } from "@chakra-ui/icons";
 import {
   Box,
   Flex,
@@ -21,9 +15,10 @@ import {
   Show,
   Spacer,
 } from "@chakra-ui/react";
-import { hover } from "@testing-library/user-event/dist/hover";
+
 import React from "react";
 import { NavHashLink as Link } from "react-router-hash-link";
+import { ResumeButton } from "./MyButton";
 
 const name = "<Aniket Pandey/>";
 
@@ -39,8 +34,7 @@ const Navbar = () => {
       border="none"
       marginInline="auto"
       paddingInline={{ base: "10px", sm: "24px" }}
-      // backgroundImage="linear-gradient(to bottom, #171A26),rgba(23,26,38,0.0001))"
-      bgColor="teal"
+      bgColor="black"
       position="fixed"
       top="0"
       zIndex="1"
@@ -55,7 +49,7 @@ const Navbar = () => {
         <Box p="4" bg="none">
           <Heading
             as="h1"
-            color="blackAlpha.800"
+            color="whiteAlpha.700"
             size={{ base: "md", sm: "lg", md: "lg", lg: "lg" }}
           >
             {name}
@@ -72,7 +66,7 @@ const Navbar = () => {
               style={({ isActive }) => (isActive ? activeStyle : undefined)}
               end
             >
-              <Heading as="h4" size="md">
+              <Heading as="h4" size="md" color="whiteAlpha.700">
                 Home
               </Heading>
             </Link>
@@ -83,7 +77,7 @@ const Navbar = () => {
               style={({ isActive }) => (isActive ? activeStyle : undefined)}
               end
             >
-              <Heading as="h4" size="md">
+              <Heading as="h4" size="md" color="whiteAlpha.700">
                 About Me
               </Heading>
             </Link>
@@ -94,7 +88,7 @@ const Navbar = () => {
               style={({ isActive }) => (isActive ? activeStyle : undefined)}
               end
             >
-              <Heading as="h4" size="md">
+              <Heading as="h4" size="md" color="whiteAlpha.700">
                 Skills
               </Heading>
             </Link>
@@ -105,7 +99,7 @@ const Navbar = () => {
               style={({ isActive }) => (isActive ? activeStyle : undefined)}
               end
             >
-              <Heading as="h4" size="md">
+              <Heading as="h4" size="md" color="whiteAlpha.700">
                 Projects
               </Heading>
             </Link>
@@ -116,21 +110,13 @@ const Navbar = () => {
               style={({ isActive }) => (isActive ? activeStyle : undefined)}
               end
             >
-              <Heading as="h4" size="md">
+              <Heading as="h4" size="md" color="whiteAlpha.700">
                 Contacts
               </Heading>
             </Link>
-
-            <Link
-              smooth
-              to="#resume"
-              style={({ isActive }) => (isActive ? activeStyle : undefined)}
-              end
-            >
-              <Heading as="h4" size="md">
-                Resume
-              </Heading>
-            </Link>
+            <Box>
+              <ResumeButton />
+            </Box>
           </Flex>
         </Show>
 
@@ -143,7 +129,7 @@ const Navbar = () => {
               icon={<HamburgerIcon />}
               variant="outline"
               bg="black"
-              color="whiteAlpha.900"
+              color="whiteAlpha.700"
             />
             <MenuList>
               <Link
@@ -204,18 +190,6 @@ const Navbar = () => {
                 <MenuItem icon={<MdContacts />}>
                   <Heading as="h4" size="md">
                     Contacts
-                  </Heading>
-                </MenuItem>
-              </Link>
-              <Link
-                smooth
-                to="#resume"
-                style={({ isActive }) => (isActive ? activeStyle : undefined)}
-                end
-              >
-                <MenuItem icon={<EditIcon />}>
-                  <Heading as="h4" size="md">
-                    Resume
                   </Heading>
                 </MenuItem>
               </Link>

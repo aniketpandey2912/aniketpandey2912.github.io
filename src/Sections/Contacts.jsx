@@ -5,12 +5,20 @@ function Contacts() {
   return (
     <Box
       border="1px solid black"
-      h="100vh"
+      h="100%"
       id="contacts"
       py="100px"
-      bgGradient="linear(to-l, #E7E6EF,  #009090)"
+      bgColor="black"
     >
-      <Heading textAlign="center" color="blue.600">Contacts</Heading>
+      <Heading
+        textAlign="center"
+        mb="50px"
+        fontSize="6xl"
+        fontWeight="extrabold"
+        color="whiteAlpha.700"
+      >
+        Contacts
+      </Heading>
     </Box>
   );
 }

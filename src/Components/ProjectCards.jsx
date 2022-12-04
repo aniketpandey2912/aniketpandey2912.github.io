@@ -18,7 +18,14 @@ const ProjectCards = (props) => {
   const { imgUrl, title, githubUrl, deployedUrl, description } = props;
 
   return (
-    <Box border="1px solid none">
+    <Box
+      border="1px solid none"
+      boxShadow="dark-lg"
+      p={{ base: "6", sm: "6", md: "6", lg: "6" }}
+      rounded="md"
+      bg="#6B728E"
+      color="white"
+    >
       <Flex direction="column" justifyContent="center" alignItems="center">
         <Image
           src={imgUrl}
@@ -28,7 +35,7 @@ const ProjectCards = (props) => {
           mb="20px"
         />
 
-        <Heading as="h4" size="md" color="black">
+        <Heading as="h4" size="md">
           {title} Clone
         </Heading>
         <Text textAlign="center">{description}</Text>

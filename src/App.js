@@ -1,5 +1,4 @@
-// import logo from "./logo.svg";
-// import "./App.css";
+
 import { Box } from "@chakra-ui/react";
 import Navbar from "./Components/Navbar";
 import Home from "./Sections/Home";
@@ -20,7 +19,7 @@ function App() {
       <Skills />
       <Projects />
       <Contacts />
-      <Resume />
+      {/* <Resume /> */}
     </Box>
   );
 }

@@ -6,9 +6,9 @@ export const ResumeButton = () => {
   return (
     <Button
       type="download"
-      colorScheme="teal"
+      colorScheme="whiteAlpha"
       size={{ base: "xs", sm: "sm", md: "md", lg: "lg" }}
-      mt="15px"
+      w="100%"
       rightIcon={<GrDownload />}
       color="black"
     >
@@ -22,7 +22,7 @@ export const ProjectButton = ({ text, btnIcon }) => {
     <Button
       type="download"
       // bg="teal"
-      colorScheme="teal"
+      colorScheme="whiteAlpha"
       variant="solid"
       size={{ base: "xs", sm: "sm", md: "md", lg: "lg" }}
       w="100%"
