@@ -13,24 +13,24 @@ const Skills = () => {
     >
       <Heading
         textAlign="center"
-        mb="50px"
-        fontSize="6xl"
+        mb={{ base: "20px", sm: "30px", md: "40px", lg: "50px" }}
+        fontSize={{ base: "4xl", sm: "5xl", md: "5xl", lg: "5xl" }}
         fontWeight="extrabold"
         color="whiteAlpha.700"
       >
         Skills
       </Heading>
       <Grid
-        px="30px"
+        px={{ base: "80px", sm: "40px", md: "100px", lg: "100px" }}
         justifyContent="space-between"
         alignItems="center"
         gridTemplateColumns={{
-          base: "repeat(2,1fr)",
+          base: "repeat(1,1fr)",
           sm: "repeat(3,1fr)",
           md: "repeat(3,1fr)",
           lg: "repeat(4,1fr)",
         }}
-        gap={{ base: "4%", sm: "5%" }}
+        gap={{ base: "20px", sm: "5%" }}
       >
         <SkillCards
           imgUrl="https://brandeps.com/icon-download/H/Html-icon-vector-01.svg"

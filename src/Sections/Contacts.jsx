@@ -1,5 +1,9 @@
-import { Box, Heading } from "@chakra-ui/react";
+import { Box, Flex, Heading, Spacer, Link, Text } from "@chakra-ui/react";
 import React from "react";
+import { BsGithub } from "react-icons/bs";
+import { SlSocialLinkedin } from "react-icons/sl";
+import { TfiEmail } from "react-icons/tfi";
+import { ContactsButton, ResumeButton } from "../Components/MyButton";
 
 function Contacts() {
   return (
@@ -7,18 +11,80 @@ function Contacts() {
       border="1px solid black"
       h="100%"
       id="contacts"
-      py="100px"
+      py={{ base: "20px", sm: "30px", md: "40px", lg: "50px" }}
       bgColor="black"
     >
       <Heading
         textAlign="center"
-        mb="50px"
-        fontSize="6xl"
+        mb={{ base: "20px", sm: "30px", md: "40px", lg: "50px" }}
+        fontSize={{ base: "4xl", sm: "5xl", md: "5xl", lg: "5xl" }}
         fontWeight="extrabold"
         color="whiteAlpha.700"
       >
         Contacts
       </Heading>
+
+      {/* Contact Options */}
+      <Flex
+        w={{ base: "80%", sm: "80%", md: "60%", lg: "50%" }}
+        direction={{ base: "column", sm: "row" }}
+        m="auto"
+        color="whiteAlpha.600"
+        rowGap="10px"
+      >
+        {/* Email */}
+        <Box>
+          <Link
+            href="mailto:aniketpandey2912@gmail.com"
+            target="_blank"
+            w="100%"
+            _hover={{ textDecoration: "none" }}
+          >
+            <ContactsButton btnIcon={<TfiEmail />} btnColor="red" />
+            <Text textAlign="center" fontWeight="extrabold">
+              E-mail
+            </Text>
+          </Link>
+        </Box>
+        <Spacer />
+
+        {/* Github */}
+        <Box>
+          <Link
+            href="https://github.com/aniketpandey2912"
+            target="_blank"
+            w="100%"
+            _hover={{ textDecoration: "none" }}
+          >
+            <ContactsButton btnIcon={<BsGithub />} btnColor="whiteAlpha" />
+            <Text textAlign="center" fontWeight="extrabold">
+              Github
+            </Text>
+          </Link>
+        </Box>
+        <Spacer />
+
+        {/* Linkedin */}
+        <Box>
+          <Link
+            href="https://www.linkedin.com/in/aniket-pandey2912/"
+            target="_blank"
+            w="100%"
+            _hover={{ textDecoration: "none" }}
+          >
+            <ContactsButton btnIcon={<SlSocialLinkedin />} btnColor="blue" />
+            <Text textAlign="center" fontWeight="extrabold">
+              LinkedIn
+            </Text>
+          </Link>
+        </Box>
+        <Spacer />
+
+        {/* Reume */}
+        <Box>
+          <ResumeButton />
+        </Box>
+      </Flex>
     </Box>
   );
 }

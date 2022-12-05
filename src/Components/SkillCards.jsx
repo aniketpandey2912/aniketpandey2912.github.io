@@ -13,13 +13,7 @@ const SkillCards = (props) => {
       color="white"
     >
       <Flex direction="column" justifyContent="center" alignItems="center">
-        <Image
-          src={imgUrl}
-          alt={title}
-          w="30%"
-          //   h={{ base: "180px", sm: "200px", md: "150px", lg: "230px" }}
-          mb="20px"
-        />
+        <Image src={imgUrl} alt={title} w="30%" />
 
         <Heading as="h4" size="md">
           {title}

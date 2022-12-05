@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, Image, Text } from "@chakra-ui/react";
+import { Box, Flex, Heading, Hide, Image, Show, Text } from "@chakra-ui/react";
 import React from "react";
 import { ResumeButton } from "../Components/MyButton";
 
@@ -7,8 +7,8 @@ const Home = () => {
     <Box border="none" h="100%" py="100px" id="home" bgColor="#404258">
       <Heading
         textAlign="center"
-        mb="50px"
-        fontSize="6xl"
+        mb={{ base: "20px", sm: "30px", md: "40px", lg: "50px" }}
+        fontSize={{ base: "4xl", sm: "5xl", md: "5xl", lg: "5xl" }}
         fontWeight="extrabold"
         color="whiteAlpha.700"
       >
@@ -28,54 +28,66 @@ const Home = () => {
         justifyContent="center"
         alignItems="center"
         direction={{ base: "column", sm: "column", md: "column", lg: "row" }}
-        // rowGap="20px"
+        // bg="pink"
       >
         {/* Profile Pic */}
         <Box
           display="flex"
           flexDirection="column"
           columnGap="25px"
-          // size={{ base: "90%", sm: "50%", md: "60%", lg: "50%" }}
           w={{ base: "80%", sm: "71%", md: "71%", lg: "30%" }}
-          p="1%"
-          // py="6"
-          rounded="md"
-          bg="blackAlpha.600"
+          h={{ base: "150px", sm: "200px", md: "350px", lg: "400px" }}
+          bg="black"
+          boxShadow="outer"
+          p={{ base: "0", sm: "6", md: "6", lg: "6" }}
         >
           <Image
-            src="https://github.com/aniketpandey2912/aniketpandey2912.github.io/blob/master/src/Sections/Images/ProfilePic1.jpeg?raw=true"
+            src="https://pps.whatsapp.net/v/t61.24694-24/312279609_889066975463935_3430971667029638701_n.jpg?ccb=11-4&oh=01_AdRQpxqKR1wOtLYOPphgYlqQdi9u3GOrBZdrbaNEM8xvAQ&oe=639B3495"
             alt="prof-avatar"
-            h={{ base: "120px", sm: "160px", md: "250px", lg: "300px" }}
-            w={{ base: "50%", sm: "45%", md: "40%", lg: "70%" }}
+            h={{ base: "140px", sm: "160px", md: "250px", lg: "300px" }}
             m="10px auto "
             borderRadius="50%"
           />
-          <Box
-            w={{ base: "none", sm: "none", md: "40%", lg: "80%" }}
-            m="auto"
-            textAlign="center"
-            // bg="blue"
-          >
-            <ResumeButton />
-          </Box>
+
+          {/* Resume button md and above screen size */}
+          <Show above="md">
+            <Box
+              w={{ base: "none", sm: "none", md: "40%", lg: "80%" }}
+              m="auto"
+              textAlign="center"
+            >
+              <ResumeButton />
+            </Box>
+          </Show>
         </Box>
 
         {/* MERN Image */}
-        <Box
-          // size={{ base: "90%", sm: "70%", md: "70%", lg: "50%" }}
-          w={{ base: "80%", sm: "71%", md: "71%", lg: "50%" }}
-        >
+        <Box w={{ base: "80%", sm: "71%", md: "71%", lg: "50%" }}>
           <Image
             src="https://codesandbox.io/api/v1/sandboxes/171d3/screenshot.png"
             h={{ base: "150px", sm: "200px", md: "350px", lg: "400px" }}
             w={{ base: "100%", sm: "100%", md: "100%", lg: "100%" }}
             m="auto"
-            borderRadius="10px"
           />
         </Box>
+
+        {/* resume btn for small creen */}
+        <Hide above="md">
+          <Box
+            w={{ base: "80%", sm: "70%", md: "40%", lg: "80%" }}
+            m="10px auto auto auto"
+            textAlign="center"
+          >
+            <ResumeButton />
+          </Box>
+        </Hide>
       </Flex>
     </Box>
   );
 };
 
 export default Home;
+
+// src="https://github.com/aniketpandey2912/aniketpandey2912.github.io/blob/master/src/Sections/Images/ProfilePic1.jpeg?raw=true" // original prof-pic link
+
+// src="https://pps.whatsapp.net/v/t61.24694-24/315346406_512092940876420_3771335194732394582_n.jpg?ccb=11-4&oh=01_AdSwLM0b-cQFhZJoAPDyVF-WRwidkA8MalTWzvCMiA7d_w&oe=639B1F17" // variant prof pic

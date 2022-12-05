@@ -14,11 +14,12 @@ const AboutMe = () => {
       py="100px"
       color="black"
       bgColor="#474E68"
+
     >
       <Heading
         textAlign="center"
-        mb="50px"
-        fontSize="6xl"
+        mb={{ base: "20px", sm: "30px", md: "40px", lg: "50px" }}
+        fontSize={{ base: "4xl", sm: "5xl", md: "5xl", lg: "5xl" }}
         fontWeight="extrabold"
         color="whiteAlpha.700"
       >
@@ -27,11 +28,10 @@ const AboutMe = () => {
 
       {/* Description box */}
       <Square
-        size={{ base: "90%", sm: "80%", md: "70%", lg: "40%" }}
+        w={{ base: "90%", sm: "90%", md: "80%", lg: "80%" }}
         m="auto"
         display="flex"
         flexDirection="column"
-        px="1%"
         boxShadow="dark-lg"
         p="6"
         rounded="md"
@@ -39,41 +39,43 @@ const AboutMe = () => {
       >
         {/* <Heading textAlign="left">Hi there,</Heading> */}
         <Text
-          letterSpacing="2px"
+          // letterSpacing="2px"
           fontSize={{
-            base: "14px",
-            sm: "17px",
-            md: "20px",
-            lg: "22px",
+            base: "22px",
+            sm: "24px",
+            md: "27px",
+            lg: "30px",
           }}
           fontWeight="800"
           textAlign="justify"
-          color="black"
+          // color="whiteAlpha.700"
+          color="gray.500"
           fontFamily="monospace"
         >
           Hi there, My name is{" "}
           <Text
             display="inline"
             fontSize={{
-              base: "14px",
-              sm: "17px",
-              md: "20px",
-              lg: "22px",
+              base: "22px",
+              sm: "24px",
+              md: "27px",
+              lg: "30px",
             }}
-            color="brown"
+            color="black"
           >
             {" " + name + " "}
           </Text>{" "}
-          and I am a dedicated and detail-oriented
+          and I am from Lucknow, Uttar Pradesh. I am a dedicated and
+          detail-oriented
           <Text
             display="inline"
             fontSize={{
-              base: "14px",
-              sm: "17px",
-              md: "20px",
-              lg: "22px",
+              base: "22px",
+              sm: "24px",
+              md: "27px",
+              lg: "30px",
             }}
-            color="brown"
+            color="black"
           >
             {" " + role + " "}
           </Text>
@@ -81,12 +83,12 @@ const AboutMe = () => {
           <Text
             display="inline"
             fontSize={{
-              base: "14px",
-              sm: "17px",
-              md: "20px",
-              lg: "22px",
+              base: "22px",
+              sm: "24px",
+              md: "27px",
+              lg: "30px",
             }}
-            color="brown"
+            color="black"
           >
             MERN stack
           </Text>

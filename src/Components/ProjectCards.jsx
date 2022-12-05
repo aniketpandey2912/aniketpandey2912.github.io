@@ -31,8 +31,7 @@ const ProjectCards = (props) => {
           src={imgUrl}
           alt={title}
           w="100%"
-          h={{ base: "180px", sm: "200px", md: "150px", lg: "230px" }}
-          mb="20px"
+          h={{ base: "120px", sm: "200px", md: "150px", lg: "230px" }}
         />
 
         <Heading as="h4" size="md">
