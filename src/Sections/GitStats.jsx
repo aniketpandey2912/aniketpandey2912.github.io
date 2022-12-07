@@ -38,7 +38,7 @@ const GitStats = () => {
         <Box>
           <Image
             align="left"
-            src="https://github-readme-stats.vercel.app/api/top-langs?username=aniketpandey2912&show_icons=true&locale=en&layout=compact&theme=dracula"
+            src="https://github-readme-stats.vercel.app/api/top-langs?username=aniketpandey2912&show_icons=true&locale=en&layout=compact&theme=react&hide_border=true&bg_color=0D1117"
             alt="aniketpandey2912"
             w={{ base: "80%", sm: "80%", md: "70%", lg: "70%" }}
             m="auto"
@@ -49,7 +49,7 @@ const GitStats = () => {
           <Image
             align="center"
             margin-Top="5px"
-            src="https://github-readme-stats.vercel.app/api?username=aniketpandey2912&show_icons=true&locale=en&theme=dracula"
+            src="https://github-readme-stats.vercel.app/api?username=aniketpandey2912&show_icons=true&locale=en&theme=react&hide_border=true&bg_color=0D1117"
             alt="aniketpandey2912"
             w={{ base: "80%", sm: "80%", md: "70%", lg: "70%" }}
             m="auto"
@@ -58,7 +58,7 @@ const GitStats = () => {
         <Box>
           <Image
             align="center"
-            src="https://github-readme-streak-stats.herokuapp.com/?user=aniketpandey2912&theme=dracula"
+            src="https://github-readme-streak-stats.herokuapp.com/?user=aniketpandey2912&theme=react&hide_border=true&bg_color=0D1117"
             alt="aniketpandey2912"
             w={{ base: "80%", sm: "80%", md: "70%", lg: "70%" }}
             m="auto"
