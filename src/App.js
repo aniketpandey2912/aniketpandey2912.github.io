@@ -1,4 +1,3 @@
-
 import { Box } from "@chakra-ui/react";
 import Navbar from "./Components/Navbar";
 import Home from "./Sections/Home";
@@ -8,6 +7,7 @@ import Projects from "./Sections/Projects";
 import Contacts from "./Sections/Contacts";
 import Resume from "./Sections/Resume";
 import AllRoutes from "./AllRoutes/AllRoutes";
+import GitStats from "./Sections/GitStats";
 
 function App() {
   return (
@@ -18,6 +18,7 @@ function App() {
       <AboutMe />
       <Skills />
       <Projects />
+      <GitStats />
       <Contacts />
       {/* <Resume /> */}
     </Box>

@@ -14,7 +14,6 @@ const AboutMe = () => {
       py="100px"
       color="black"
       bgColor="#474E68"
-
     >
       <Heading
         textAlign="center"
@@ -37,7 +36,6 @@ const AboutMe = () => {
         rounded="md"
         bgColor="#474E68"
       >
-        {/* <Heading textAlign="left">Hi there,</Heading> */}
         <Text
           // letterSpacing="2px"
           fontSize={{
