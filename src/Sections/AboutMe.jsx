@@ -46,8 +46,8 @@ const AboutMe = () => {
           }}
           fontWeight="800"
           textAlign="justify"
-          // color="whiteAlpha.700"
-          color="gray.500"
+          color="whiteAlpha.700"
+          // color="gray.500"
           fontFamily="monospace"
         >
           Hi there, My name is{" "}

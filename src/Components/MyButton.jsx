@@ -1,20 +1,26 @@
-import { Button } from "@chakra-ui/react";
+import { Button, Link } from "@chakra-ui/react";
 import React from "react";
 import { GrDownload } from "react-icons/gr";
 
 // Resume Button
 export const ResumeButton = () => {
   return (
-    <Button
-      type="download"
-      colorScheme="whiteAlpha"
-      size={{ base: "md", sm: "sm", md: "md", lg: "lg" }}
-      w="100%"
-      rightIcon={<GrDownload />}
-      color="black"
+    <Link
+      href="https://drive.google.com/file/d/1x0iQopDu1u7FI_gu_QY_q37EX2gCMYos/view"
+      target="_blank"
+      style={{ textDecoration: "none" }}
     >
-      Download Resume
-    </Button>
+      <Button
+        type="download"
+        colorScheme="whiteAlpha"
+        size={{ base: "md", sm: "sm", md: "md", lg: "lg" }}
+        w="100%"
+        rightIcon={<GrDownload />}
+        color="black"
+      >
+        Resume
+      </Button>
+    </Link>
   );
 };
 
