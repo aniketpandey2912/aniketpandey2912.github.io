@@ -42,7 +42,7 @@ const Home = () => {
           p={{ base: "0", sm: "6", md: "6", lg: "6" }}
         >
           <Image
-            src="https://pps.whatsapp.net/v/t61.24694-24/312279609_889066975463935_3430971667029638701_n.jpg?ccb=11-4&oh=01_AdRQpxqKR1wOtLYOPphgYlqQdi9u3GOrBZdrbaNEM8xvAQ&oe=639B3495"
+            src="https://github.com/aniketpandey2912/aniketpandey2912.github.io/blob/master/src/Sections/Images/ProfilePic3.jpeg?raw=true"
             alt="prof-avatar"
             h={{ base: "140px", sm: "160px", md: "250px", lg: "300px" }}
             m="10px auto "
@@ -88,6 +88,8 @@ const Home = () => {
 
 export default Home;
 
-// src="https://github.com/aniketpandey2912/aniketpandey2912.github.io/blob/master/src/Sections/Images/ProfilePic1.jpeg?raw=true" // original prof-pic link
+// https://github.com/aniketpandey2912/aniketpandey2912.github.io/blob/master/src/Sections/Images/ProfilePic3.jpeg?raw=true  // prof-pic - 3 github images
 
-// src="https://pps.whatsapp.net/v/t61.24694-24/315346406_512092940876420_3771335194732394582_n.jpg?ccb=11-4&oh=01_AdSwLM0b-cQFhZJoAPDyVF-WRwidkA8MalTWzvCMiA7d_w&oe=639B1F17" // variant prof pic
+// src="https://pps.whatsapp.net/v/t61.24694-24/315346406_512092940876420_3771335194732394582_n.jpg?ccb=11-4&oh=01_AdSwLM0b-cQFhZJoAPDyVF-WRwidkA8MalTWzvCMiA7d_w&oe=639B1F17" // prof pic -2  -- whatsapp link
+
+// src="https://github.com/aniketpandey2912/aniketpandey2912.github.io/blob/master/src/Sections/Images/ProfilePic1.jpeg?raw=true" // original prof-pic-1 link

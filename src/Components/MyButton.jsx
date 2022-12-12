@@ -6,8 +6,10 @@ import { GrDownload } from "react-icons/gr";
 export const ResumeButton = () => {
   return (
     <Link
-      href="https://drive.google.com/file/d/1x0iQopDu1u7FI_gu_QY_q37EX2gCMYos/view"
+      // href="https://drive.google.com/file/d/1x0iQopDu1u7FI_gu_QY_q37EX2gCMYos/view"
+      href="./resumedownload/resume.pdf"
       target="_blank"
+      download={true}
       style={{ textDecoration: "none" }}
     >
       <Button
