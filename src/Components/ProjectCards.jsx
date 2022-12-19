@@ -37,7 +37,7 @@ const ProjectCards = (props) => {
         <Heading as="h4" size="md">
           {title} Clone
         </Heading>
-        <Text textAlign="center">{description}</Text>
+        <Text textAlign="justify">{description}</Text>
         <Link
           href={`${githubUrl}`}
           target="_blank"

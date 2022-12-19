@@ -93,6 +93,9 @@ function Contacts() {
         {/* Reume */}
         <Box>
           <ResumeButton />
+          <Text textAlign="center" fontWeight="extrabold">
+            Download Resume
+          </Text>
         </Box>
       </Flex>
 

@@ -72,7 +72,7 @@ const Skills = () => {
         />
 
         <SkillCards
-          imgUrl="https://brandeps.com/icon-download/T/Typescript-icon-vector-01.svg"
+          imgUrl="https://cdn-icons-png.flaticon.com/512/5968/5968566.png"
           title="Typescript"
         />
       </Grid>

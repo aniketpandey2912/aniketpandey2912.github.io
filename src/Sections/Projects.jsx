@@ -34,7 +34,7 @@ const Projects = () => {
       >
         <ProjectCards
           title="ZeeApp"
-          imgUrl="https://github.com/aniketpandey2912/aniketpandey2912.github.io/blob/master/src/Sections/Images/Mailtrap.png?raw=true"
+          imgUrl="https://github.com/aniketpandey2912/aniketpandey2912.github.io/blob/master/src/Sections/Images/ZeeAppPoster.png?raw=true"
           githubUrl="https://github.com/aniketpandey2912/Zee5-Clone"
           deployedUrl="https://kaleidoscopic-alpaca-f60e4a.netlify.app/"
           description="It is a clone of website Zee5.com. It was an individual project. Duration was 5 days"
