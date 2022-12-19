@@ -33,7 +33,7 @@ const Skills = () => {
         gap={{ base: "20px", sm: "5%" }}
       >
         <SkillCards
-          imgUrl="https://brandeps.com/icon-download/H/Html-icon-vector-01.svg"
+          imgUrl="https://raw.githubusercontent.com/aniketpandey2912/aniketpandey2912.github.io/2fcb63e3866692f40eb61fb76c89b4f519e5294f/src/Sections/Images/HTML.svg"
           title="HTML"
         />
         <SkillCards
