@@ -4,7 +4,7 @@ import { ResumeButton } from "../Components/MyButton";
 
 const Home = () => {
   return (
-    <Box border="none" h="100%" py="100px" id="home" bgColor="#404258">
+    <Box border="none" h="100%" py="100px" id="home" bgColor="#404258" w="100vmax" >
       <Heading
         textAlign="center"
         mb={{ base: "20px", sm: "30px", md: "40px", lg: "50px" }}

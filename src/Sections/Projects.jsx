@@ -5,8 +5,9 @@ import ProjectCards from "../Components/ProjectCards";
 const Projects = () => {
   return (
     <Box
-      border="1px solid black"
+      // border="1px solid black"
       h="100%"
+      w="100vmax"
       id="projects"
       py="100px"
       bgColor="#6B728E"
@@ -30,7 +31,7 @@ const Projects = () => {
           md: "repeat(3,1fr)",
           lg: "repeat(3,1fr)",
         }}
-        gap={{ base: "3%", sm: "4%", md: "5%" }}
+        gap={{ base: "2%", sm: "4%", md: "5%" }}
       >
         <ProjectCards
           title="ZeeApp"
@@ -38,6 +39,7 @@ const Projects = () => {
           githubUrl="https://github.com/aniketpandey2912/Zee5-Clone"
           deployedUrl="https://kaleidoscopic-alpaca-f60e4a.netlify.app/"
           description="It is a clone of website Zee5.com. It was an individual project. Duration was 5 days"
+          techs = "React, Chakra-Ui, Javascript, Html, Css"
         />
 
         <ProjectCards
@@ -46,6 +48,7 @@ const Projects = () => {
           githubUrl="https://github.com/aniketpandey2912/acceptable-popcorn-8320"
           deployedUrl="https://aniketpandey2912-makes-great-sites.netlify.app/"
           description="It is a clone of website Lately.ai. It was an individual project. Duration was 5 days"
+          techs = "React, Chakra-Ui, Javascript, Html, Css"
         />
         <ProjectCards
           title="Cult.fit"
@@ -53,6 +56,7 @@ const Projects = () => {
           githubUrl="https://github.com/aniketpandey2912/flawless-vegetable-3066"
           deployedUrl="https://cult-fit-aniket-clone.netlify.app/"
           description="It is a clone of website Cult.fit. It was an individual project. Duration was 5 days"
+          techs = "React, Chakra-Ui, Javascript, Html, Css"
         />
 
         <ProjectCards
@@ -61,6 +65,7 @@ const Projects = () => {
           githubUrl="https://github.com/SubhadeepBid/alleged-partner-6503"
           deployedUrl="https://super-pithivier-ba36c1.netlify.app/email_api"
           description="It is a clone of website Mailtrap. It was an individual project. Duration was 5 days"
+          techs = "React, Chakra-Ui, Javascript, Html, Css"
         />
       </Grid>
     </Box>

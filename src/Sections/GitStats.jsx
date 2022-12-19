@@ -14,6 +14,7 @@ const GitStats = () => {
         alignItems: "center",
       }}
       h="100%"
+      w="100vmax"
       py="100px"
     >
       <Heading

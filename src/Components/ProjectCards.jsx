@@ -15,7 +15,7 @@ import { BsGithub } from "react-icons/bs";
 import { GrDeploy } from "react-icons/gr";
 
 const ProjectCards = (props) => {
-  const { imgUrl, title, githubUrl, deployedUrl, description } = props;
+  const { imgUrl, title, githubUrl, deployedUrl, description, techs } = props;
 
   return (
     <Box
@@ -31,13 +31,16 @@ const ProjectCards = (props) => {
           src={imgUrl}
           alt={title}
           w="100%"
-          h={{ base: "120px", sm: "200px", md: "150px", lg: "230px" }}
+          h={{ base: "140px", sm: "200px", md: "150px", lg: "230px" }}
         />
 
         <Heading as="h4" size="md">
           {title} Clone
         </Heading>
-        <Text textAlign="justify">{description}</Text>
+        <Text textAlign="justify">
+          {description} <br /> Techs Used : {techs}
+        </Text>
+        {/* <Text textAlign="justify">Techs Used : {techs}</Text> */}
         <Link
           href={`${githubUrl}`}
           target="_blank"

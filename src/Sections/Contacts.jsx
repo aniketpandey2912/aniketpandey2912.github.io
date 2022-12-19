@@ -20,19 +20,30 @@ function Contacts() {
     <Box
       border="1px solid black"
       h="100%"
+      w="100vmax"
       id="contacts"
       py={{ base: "20px", sm: "30px", md: "40px", lg: "50px" }}
       bgColor="black"
     >
       <Heading
         textAlign="center"
-        mb={{ base: "20px", sm: "30px", md: "40px", lg: "50px" }}
+        mb={{ base: "20px", sm: "30px", md: "40px", lg: "30px" }}
         fontSize={{ base: "4xl", sm: "5xl", md: "5xl", lg: "5xl" }}
         fontWeight="extrabold"
         color="whiteAlpha.700"
       >
         Contacts
       </Heading>
+
+      {/* Gmail & Mobile number */}
+      <Box textColor="whiteAlpha.700" mb="50px" color="blue">
+        <Text textAlign="center" fontWeight="bold">
+          G-mail : aniketpandey2912@gmail.com
+        </Text>
+        <Text textAlign="center" fontWeight="bold">
+          Mobile No. : 9956470719
+        </Text>
+      </Box>
 
       {/* Contact Options */}
       <Flex
