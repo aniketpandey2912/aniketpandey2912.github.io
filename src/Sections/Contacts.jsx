@@ -1,6 +1,16 @@
-import { Box, Flex, Heading, Spacer, Link, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Flex,
+  Heading,
+  Spacer,
+  Link,
+  Text,
+  Button,
+  Input,
+} from "@chakra-ui/react";
 import React from "react";
 import { BsGithub } from "react-icons/bs";
+// import { FaLocationArrow } from "react-icons/fa";
 import { SlSocialLinkedin } from "react-icons/sl";
 import { TfiEmail } from "react-icons/tfi";
 import { ContactsButton, ResumeButton } from "../Components/MyButton";
@@ -85,6 +95,29 @@ function Contacts() {
           <ResumeButton />
         </Box>
       </Flex>
+
+      {/* Messege form */}
+      {/* <Box border="2rem solid white">
+        <form action="https://formspree.io/f/xyyagelr" method="POST">
+          <Input type="text" name="name" id="name" placeholder="Name" />
+          <Input type="email" name="email" id="email" placeholder="Email" />
+          <Input
+            type="text"
+            name="projectName"
+            id="project"
+            placeholder="Project Name"
+          />
+          <textarea
+            type="text"
+            name="message"
+            id="message"
+            placeholder="Message"
+          />
+          <button border="3rem solid pink" color="white">
+            Send
+          </button>
+        </form>
+      </Box> */}
     </Box>
   );
 }

@@ -4,14 +4,22 @@ import { GrDownload } from "react-icons/gr";
 
 // Resume Button
 export const ResumeButton = () => {
+  const handleClick = () => {
+    window.open(
+      "https://drive.google.com/file/d/1x0iQopDu1u7FI_gu_QY_q37EX2gCMYos/view"
+    );
+  };
+
   return (
     <Link
       // href="https://drive.google.com/file/d/1x0iQopDu1u7FI_gu_QY_q37EX2gCMYos/view"
-      href="./resumedownload/resume.pdf"
+      href="Aniket-Pandey-Resume.pdf"
       target="_blank"
-      download={true}
+      download="Aniket-Pandey-Resume.pdf"
       style={{ textDecoration: "none" }}
+      onClick={handleClick}
     >
+      {/* // <a download href="./Aniket-Pandey-Resume.pdf" onClick={handleClick}> */}
       <Button
         type="download"
         colorScheme="whiteAlpha"
@@ -22,6 +30,7 @@ export const ResumeButton = () => {
       >
         Resume
       </Button>
+      {/* </a> */}
     </Link>
   );
 };
@@ -59,3 +68,12 @@ export const ContactsButton = ({ btnIcon, btnColor }) => {
     </Button>
   );
 };
+
+// <a
+//   target={"blank"}
+//   download
+//   href="./Vaibhav-Mougha-Resume.pdf"
+//   onClick={handleClick}
+// >
+//   <button>Download CV</button>
+// </a>

@@ -33,11 +33,11 @@ const Projects = () => {
         gap={{ base: "3%", sm: "4%", md: "5%" }}
       >
         <ProjectCards
-          title="Cult.fit"
-          imgUrl="https://github.com/aniketpandey2912/aniketpandey2912.github.io/blob/master/src/Sections/Images/Cult.png?raw=true"
-          githubUrl="https://github.com/aniketpandey2912/flawless-vegetable-3066"
-          deployedUrl="https://cult-fit-aniket-clone.netlify.app/"
-          description="It is a clone of website Cult.fit. It was an individual project. Duration was 5 days"
+          title="ZeeApp"
+          imgUrl="https://github.com/aniketpandey2912/aniketpandey2912.github.io/blob/master/src/Sections/Images/Mailtrap.png?raw=true"
+          githubUrl="https://github.com/aniketpandey2912/Zee5-Clone"
+          deployedUrl="https://kaleidoscopic-alpaca-f60e4a.netlify.app/"
+          description="It is a clone of website Zee5.com. It was an individual project. Duration was 5 days"
         />
 
         <ProjectCards
@@ -46,6 +46,13 @@ const Projects = () => {
           githubUrl="https://github.com/aniketpandey2912/acceptable-popcorn-8320"
           deployedUrl="https://aniketpandey2912-makes-great-sites.netlify.app/"
           description="It is a clone of website Lately.ai. It was an individual project. Duration was 5 days"
+        />
+        <ProjectCards
+          title="Cult.fit"
+          imgUrl="https://github.com/aniketpandey2912/aniketpandey2912.github.io/blob/master/src/Sections/Images/Cult.png?raw=true"
+          githubUrl="https://github.com/aniketpandey2912/flawless-vegetable-3066"
+          deployedUrl="https://cult-fit-aniket-clone.netlify.app/"
+          description="It is a clone of website Cult.fit. It was an individual project. Duration was 5 days"
         />
 
         <ProjectCards
