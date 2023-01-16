@@ -1,4 +1,3 @@
-import { Box } from "@chakra-ui/react";
 import Githubcalendar from "react-github-calendar";
 import ReactToolTip from "react-tooltip";
 
@@ -21,18 +20,15 @@ const Calendar = () => {
   };
 
   return (
-    <Box w={{ base: "80%", sm: "80%", md: "70%", lg: "70%" }} m="auto">
-      <Githubcalendar
-        style={{ margin: "auto" }}
-        username="aniketpandey2912"
-        color="green"
-        transformData={selectLastHalfYear}
-        blockSize={20}
-        fontSize={20}
-      >
-        <ReactToolTip delayHide={20} html />
-      </Githubcalendar>
-    </Box>
+    <Githubcalendar
+      username="aniketpandey2912"
+      color="green"
+      transformData={selectLastHalfYear}
+      blockSize={15}
+      fontSize={15}
+    >
+      <ReactToolTip delayHide={20} html />
+    </Githubcalendar>
   );
 };
 

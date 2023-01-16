@@ -13,8 +13,8 @@ const GitStats = () => {
         justifyContent: "center",
         alignItems: "center",
       }}
-      h="100%"
-      w="100vmax"
+      h="auto"
+      // w="100%"
       py="100px"
     >
       <Heading
@@ -33,7 +33,10 @@ const GitStats = () => {
         flexDirection="column"
         rowGap="30px"
       >
-        <Box>
+        <Box
+          textAlign={{ base: "left", sm: "center" }}
+          ml={{ base: "8%", sm: "15%", md: "30%" }}
+        >
           <Calendar />
         </Box>
         <Box>
@@ -59,7 +62,7 @@ const GitStats = () => {
         <Box>
           <Image
             align="center"
-            src="https://github-readme-streak-stats.herokuapp.com/?user=aniketpandey2912&theme=react&hide_border=true&bg_color=0D1117"
+            src="https://github-readme-streak-stats.herokuapp.com/?user=aniketpandey2912&hide_border=true&theme=react&hide_border=true&bg_color=0D1117"
             alt="aniketpandey2912"
             w={{ base: "80%", sm: "80%", md: "70%", lg: "70%" }}
             m="auto"

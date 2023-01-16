@@ -10,8 +10,8 @@ function Contacts() {
   return (
     <Box
       border="1px solid black"
-      h="100%"
-      w="100vmax"
+      h="auto"
+      // w="100%"
       id="contacts"
       py={{ base: "20px", sm: "30px", md: "40px", lg: "50px" }}
       bgColor="black"

@@ -6,8 +6,8 @@ const Projects = () => {
   return (
     <Box
       // border="1px solid black"
-      h="100%"
-      w="100vmax"
+      h="auto"
+      // w="100%"
       id="projects"
       py="100px"
       bgColor="#6B728E"
@@ -34,7 +34,11 @@ export const ProjectsList = () => {
   return (
     <SimpleGrid
       spacing={4}
-      templateColumns="repeat(auto-fill, minmax(350px, 1fr))"
+      templateColumns={{
+        base: "repeat(auto-fill, minmax(200px, 1fr))",
+        sm: "repeat(auto-fill, minmax(300px, 1fr))",
+        md: "repeat(auto-fill, minmax(350px, 1fr))",
+      }}
     >
       {/* Movie List */}
       {myProjects &&
@@ -100,5 +104,3 @@ const myProjects = [
     techs: "React, Chakra-Ui, Javascript, Html, Css",
   },
 ];
-
-

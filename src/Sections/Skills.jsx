@@ -6,8 +6,8 @@ const Skills = () => {
   return (
     <Box
       // border="1px solid red"
-      h="100%"
-      w="100vmax"
+      h="auto"
+      // w="100%"
       id="skills"
       py="100px"
       bgColor="#50577A"

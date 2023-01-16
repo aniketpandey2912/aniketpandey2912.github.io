@@ -7,8 +7,8 @@ const AboutMe = () => {
   return (
     <Box
       // border="1px solid black"
-      h="100%"
-      w="100vmax"
+      h="auto"
+      // w="100%"
       id="about"
       py="100px"
       color="black"
