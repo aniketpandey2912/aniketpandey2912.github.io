@@ -47,10 +47,10 @@ const AboutMe = () => {
           fontFamily="monospace"
         >
           Hi there, My name is {name} and I am from Lucknow, Uttar Pradesh. I am
-          a dedicated and detail-oriented A dedicated and detail-oriented Full
-          Stack Web Developer skilled in Javascript, HTML, CSS, and MERN stack.
-          Has experience in building individual and group projects with 1200+
-          hours of coding and problem-solving in DSA.
+          a dedicated and detail-oriented Full Stack Web Developer skilled in
+          Javascript, HTML, CSS, and MERN stack. Has experience in building
+          individual and group projects with 1200+ hours of coding and
+          problem-solving in DSA.
         </Text>
       </Square>
     </Box>
