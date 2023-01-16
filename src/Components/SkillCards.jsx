@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, Image, Link } from "@chakra-ui/react";
+import { Box, Flex, Heading, Image } from "@chakra-ui/react";
 import React from "react";
 
 const SkillCards = (props) => {

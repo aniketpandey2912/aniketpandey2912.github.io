@@ -1,13 +1,4 @@
-import {
-  Box,
-  Flex,
-  Heading,
-  Spacer,
-  Link,
-  Text,
-  Button,
-  Input,
-} from "@chakra-ui/react";
+import { Box, Flex, Heading, Spacer, Link, Text } from "@chakra-ui/react";
 import React from "react";
 import { BsGithub } from "react-icons/bs";
 // import { FaLocationArrow } from "react-icons/fa";

@@ -4,7 +4,6 @@ import AboutMe from "../Sections/AboutMe";
 import Contacts from "../Sections/Contacts";
 import Home from "../Sections/Home";
 import Projects from "../Sections/Projects";
-import Resume from "../Sections/Resume";
 import Skills from "../Sections/Skills";
 
 function AllRoutes() {
@@ -24,9 +23,6 @@ function AllRoutes() {
       </Route>
       <Route exact path="/contacts" component={<Contacts />}>
         Contacts
-      </Route>
-      <Route exact path="/resume" component={<Resume />}>
-        Resume
       </Route>
     </Routes>
   );

@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, Hide, Image, Show, Text } from "@chakra-ui/react";
+import { Box, Flex, Heading, Hide, Image, Show } from "@chakra-ui/react";
 import React from "react";
 import { ResumeButton } from "../Components/MyButton";
 

@@ -100,6 +100,7 @@ const Skills = () => {
           md: "repeat(3,1fr)",
           lg: "repeat(4,1fr)",
         }}
+        // gridTemplateColumns="repeat(auto-fill, minmax(350px, 1fr))"
         gap={{ base: "20px", sm: "5%" }}
       >
         <SkillCards

@@ -1,4 +1,4 @@
-import { Box, Heading, Text, Image, Link } from "@chakra-ui/react";
+import { Box, Heading, Image, Link } from "@chakra-ui/react";
 import Calendar from "./GitCalender";
 
 const GitStats = () => {
@@ -49,7 +49,7 @@ const GitStats = () => {
         <Box>
           <Image
             align="center"
-            margin-Top="5px"
+            marginTop="5px"
             src="https://github-readme-stats.vercel.app/api?username=aniketpandey2912&show_icons=true&locale=en&theme=react&hide_border=true&bg_color=0D1117"
             alt="aniketpandey2912"
             w={{ base: "80%", sm: "80%", md: "70%", lg: "70%" }}
