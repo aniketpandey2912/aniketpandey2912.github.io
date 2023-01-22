@@ -34,6 +34,8 @@ const AboutMe = () => {
         p="6"
         rounded="md"
         bgColor="#474E68"
+        transition="all 0.5s linear"
+        _hover={{ transform: "scale(1.03)", bgColor: "black" }}
       >
         <Text
           fontSize={{

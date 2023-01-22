@@ -68,7 +68,7 @@ const myProjects = [
     deployedUrl: "https://creative-macaron-cbefa7.netlify.app/",
     description:
       "It is a clone of website Zee5.com. It was an individual project. Duration was 5 days",
-    techs: "React, Chakra-Ui, Javascript, Html, Css",
+    techs: ["React", "Chakra-Ui", "Javascript", "Html", "Css"],
   },
   {
     id: 2,
@@ -79,7 +79,7 @@ const myProjects = [
     deployedUrl: "https://aniketpandey2912-makes-great-sites.netlify.app/",
     description:
       "It is a clone of website Lately.ai. It was an individual project. Duration was 5 days",
-    techs: "React, Chakra-Ui, Javascript, Html, Css",
+    techs: ["React", "Chakra-Ui", "Javascript", "Html", "Css"],
   },
   {
     id: 3,
@@ -90,7 +90,7 @@ const myProjects = [
     deployedUrl: "https://cult-fit-aniket-clone.netlify.app/",
     description:
       "It is a clone of website Cult.fit. It was an individual project. Duration was 5 days",
-    techs: "React, Chakra-Ui, Javascript, Html, Css",
+    techs: ["React", "Chakra-Ui", "Javascript", "Html", "Css"],
   },
   {
     id: 4,
@@ -101,6 +101,6 @@ const myProjects = [
     deployedUrl: "https://super-pithivier-ba36c1.netlify.app/email_api",
     description:
       "It is a clone of website Mailtrap. It was an individual project. Duration was 5 days",
-    techs: "React, Chakra-Ui, Javascript, Html, Css",
+    techs: ["React", "Chakra-Ui", "Javascript", "Html", "Css"],
   },
 ];

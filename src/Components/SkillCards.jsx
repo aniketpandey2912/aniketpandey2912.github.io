@@ -11,6 +11,8 @@ const SkillCards = (props) => {
       rounded="md"
       bg="blackAlpha"
       color="white"
+      transition="all 0.5s linear"
+      _hover={{ transform: "scale(1.1)", bgColor: "cyan", color: "black" }}
     >
       <Flex direction="column" justifyContent="center" alignItems="center">
         <Image src={imgUrl} alt={title} w="30%" />
