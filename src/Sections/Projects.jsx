@@ -83,6 +83,17 @@ const myProjects = [
   },
   {
     id: 3,
+    title: "Apna Mall",
+    imgUrl:
+      "https://github.com/aniketpandey2912/aniketpandey2912.github.io/blob/master/src/Sections/Images/Lately.png?raw=true",
+    githubUrl: "https://github.com/aniketpandey2912/acceptable-popcorn-8320",
+    deployedUrl: "https://aniketpandey2912-makes-great-sites.netlify.app/",
+    description:
+      "It is a clone of website Lately.ai. It was an individual project. Duration was 5 days",
+    techs: ["React", "Chakra-Ui", "Javascript", "Html", "Css"],
+  },
+  {
+    id: 4,
     title: "Cult.fit",
     imgUrl:
       "https://github.com/aniketpandey2912/aniketpandey2912.github.io/blob/master/src/Sections/Images/Cult.png?raw=true",
@@ -93,7 +104,7 @@ const myProjects = [
     techs: ["React", "Chakra-Ui", "Javascript", "Html", "Css"],
   },
   {
-    id: 4,
+    id: 5,
     title: "Mailtrap",
     imgUrl:
       "https://github.com/aniketpandey2912/aniketpandey2912.github.io/blob/master/src/Sections/Images/Mailtrap.png?raw=true",
