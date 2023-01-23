@@ -67,7 +67,7 @@ const myProjects = [
     githubUrl: "https://github.com/aniketpandey2912/Zee5-Clone",
     deployedUrl: "https://creative-macaron-cbefa7.netlify.app/",
     description:
-      "It is a clone of website Zee5.com. It was an individual project. Built and executed in 5 days.",
+      "It is a clone of website Zee5.com. It is a collaborative project. Built and executed in 5 days.",
     techs: ["React", "Chakra-Ui", "Javascript", "Html", "Css"],
   },
   {
@@ -78,7 +78,7 @@ const myProjects = [
     githubUrl: "https://github.com/bhav1kmaru/familiar-wilderness-510",
     deployedUrl: "https://apnamall.vercel.app/",
     description:
-      "It is a clone of website Paytmmall. It was a collaborative project. Built and executed in 5 days.",
+      "It is a clone of website Paytmmall. It is a collaborative project. Built and executed in 5 days.",
     techs: ["Next.Js", "React", "Chakra-Ui", "Javascript", "Html"],
   },
   {
@@ -89,7 +89,7 @@ const myProjects = [
     githubUrl: "https://github.com/aniketpandey2912/acceptable-popcorn-8320",
     deployedUrl: "https://aniketpandey2912-makes-great-sites.netlify.app/",
     description:
-      "It is a clone of website Lately.ai. It was an individual project. Built and executed in 5 days.",
+      "It is a clone of website Lately.ai. It is an individual project. Built and executed in 5 days.",
     techs: ["React", "Chakra-Ui", "Javascript", "Html", "Css"],
   },
   {
@@ -100,7 +100,7 @@ const myProjects = [
     githubUrl: "https://github.com/aniketpandey2912/flawless-vegetable-3066",
     deployedUrl: "https://cult-fit-aniket-clone.netlify.app/",
     description:
-      "It is a clone of website Cult.fit. It was an individual project. Built and executed in 5 days.",
+      "It is a clone of website Cult.fit. It is an individual project. Built and executed in 5 days.",
     techs: ["React", "Chakra-Ui", "Javascript", "Html", "Css"],
   },
   {
@@ -111,7 +111,7 @@ const myProjects = [
     githubUrl: "https://github.com/SubhadeepBid/alleged-partner-6503",
     deployedUrl: "https://super-pithivier-ba36c1.netlify.app/email_api",
     description:
-      "It is a clone of website Mailtrap. It was an individual project. Built and executed in 5 days.",
-    techs: ["React", "Chakra-Ui", "Javascript", "Html", "Css"],
+      "It is a clone of website Mailtrap. It is an individual project. Built and executed in 5 days.",
+    techs: ["Javascript", "Html", "Css"],
   },
 ];
