@@ -61,35 +61,35 @@ export const ProjectsList = () => {
 const myProjects = [
   {
     id: 1,
-    title: "ZeeApp",
+    title: "Zee5.com",
     imgUrl:
       "https://github.com/aniketpandey2912/aniketpandey2912.github.io/blob/master/src/Sections/Images/ZeeAppPoster.png?raw=true",
     githubUrl: "https://github.com/aniketpandey2912/Zee5-Clone",
     deployedUrl: "https://creative-macaron-cbefa7.netlify.app/",
     description:
-      "It is a clone of website Zee5.com. It was an individual project. Duration was 5 days",
+      "It is a clone of website Zee5.com. It was an individual project. Built and executed in 5 days.",
     techs: ["React", "Chakra-Ui", "Javascript", "Html", "Css"],
   },
   {
     id: 2,
+    title: "Paytmmall.com",
+    imgUrl:
+      "https://github.com/aniketpandey2912/aniketpandey2912.github.io/blob/master/src/Sections/Images/ApnaMall.png?raw=true",
+    githubUrl: "https://github.com/bhav1kmaru/familiar-wilderness-510",
+    deployedUrl: "https://apnamall.vercel.app/",
+    description:
+      "It is a clone of website Paytmmall. It was a collaborative project. Built and executed in 5 days.",
+    techs: ["Next.Js", "React", "Chakra-Ui", "Javascript", "Html"],
+  },
+  {
+    id: 3,
     title: "Lately.ai",
     imgUrl:
       "https://github.com/aniketpandey2912/aniketpandey2912.github.io/blob/master/src/Sections/Images/Lately.png?raw=true",
     githubUrl: "https://github.com/aniketpandey2912/acceptable-popcorn-8320",
     deployedUrl: "https://aniketpandey2912-makes-great-sites.netlify.app/",
     description:
-      "It is a clone of website Lately.ai. It was an individual project. Duration was 5 days",
-    techs: ["React", "Chakra-Ui", "Javascript", "Html", "Css"],
-  },
-  {
-    id: 3,
-    title: "Apna Mall",
-    imgUrl:
-      "https://github.com/aniketpandey2912/aniketpandey2912.github.io/blob/master/src/Sections/Images/Lately.png?raw=true",
-    githubUrl: "https://github.com/aniketpandey2912/acceptable-popcorn-8320",
-    deployedUrl: "https://aniketpandey2912-makes-great-sites.netlify.app/",
-    description:
-      "It is a clone of website Lately.ai. It was an individual project. Duration was 5 days",
+      "It is a clone of website Lately.ai. It was an individual project. Built and executed in 5 days.",
     techs: ["React", "Chakra-Ui", "Javascript", "Html", "Css"],
   },
   {
@@ -100,7 +100,7 @@ const myProjects = [
     githubUrl: "https://github.com/aniketpandey2912/flawless-vegetable-3066",
     deployedUrl: "https://cult-fit-aniket-clone.netlify.app/",
     description:
-      "It is a clone of website Cult.fit. It was an individual project. Duration was 5 days",
+      "It is a clone of website Cult.fit. It was an individual project. Built and executed in 5 days.",
     techs: ["React", "Chakra-Ui", "Javascript", "Html", "Css"],
   },
   {
@@ -111,7 +111,7 @@ const myProjects = [
     githubUrl: "https://github.com/SubhadeepBid/alleged-partner-6503",
     deployedUrl: "https://super-pithivier-ba36c1.netlify.app/email_api",
     description:
-      "It is a clone of website Mailtrap. It was an individual project. Duration was 5 days",
+      "It is a clone of website Mailtrap. It was an individual project. Built and executed in 5 days.",
     techs: ["React", "Chakra-Ui", "Javascript", "Html", "Css"],
   },
 ];
