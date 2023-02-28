@@ -11,28 +11,26 @@ const Skills = () => {
       id="skills"
       py="100px"
       bgColor="#50577A"
+      fontFamily={"sans-serif"}
     >
       {/* Skills */}
-      <Heading
-        textAlign="center"
-        mb={{ base: "20px", sm: "30px", md: "40px", lg: "50px" }}
-        fontSize={{ base: "4xl", sm: "5xl", md: "5xl", lg: "5xl" }}
-        fontWeight="extrabold"
-        color="whiteAlpha.700"
-      >
+      <Heading textAlign="center" mb="18px" size="lg" color="white">
         Skills
       </Heading>
       <Grid
-        px={{ base: "80px", sm: "40px", md: "100px", lg: "100px" }}
+        w={{ base: "80%", sm: "75%", lg: "60%" }}
+        m="auto"
+        px={{ base: "20px", sm: "30px", md: "50px", lg: "70px" }}
         justifyContent="space-between"
         alignItems="center"
         gridTemplateColumns={{
-          base: "repeat(1,1fr)",
+          base: "repeat(2,1fr)",
           sm: "repeat(3,1fr)",
           md: "repeat(3,1fr)",
-          lg: "repeat(4,1fr)",
+          lg: "repeat(3,1fr)",
         }}
-        gap={{ base: "20px", sm: "5%" }}
+        columnGap={{ base: "20px", sm: "3%" }}
+        rowGap="20px"
       >
         <SkillCards
           imgUrl="https://raw.githubusercontent.com/aniketpandey2912/aniketpandey2912.github.io/885e23da24e8a4cab660f069f264950c1550660e/src/Sections/Images/HTML.svg"
@@ -77,31 +75,52 @@ const Skills = () => {
           imgUrl="https://github.com/aniketpandey2912/aniketpandey2912.github.io/blob/master/src/Sections/Images/Typescript.png?raw=true"
           title="Typescript"
         />
+
+        <SkillCards
+          imgUrl="https://www.cypress.io/images/layouts/navbar-brand.svg"
+          title="Cypress"
+        />
+
+        <SkillCards
+          imgUrl="https://img.icons8.com/windows/256/node-js.png"
+          title="Node.js"
+        />
+
+        <SkillCards
+          imgUrl="https://img.icons8.com/ios/1x/express-js.png"
+          title="Express.js"
+        />
+
+        <SkillCards
+          imgUrl="https://img.icons8.com/external-tal-revivo-bold-tal-revivo/256/external-mongodb-a-cross-platform-document-oriented-database-program-logo-bold-tal-revivo.png"
+          title="MongoDB"
+        />
       </Grid>
 
       {/* Tools */}
       <Heading
         textAlign="center"
         mt={{ base: "50px", sm: "60px", md: "80px", lg: "100px" }}
-        mb={{ base: "20px", sm: "30px", md: "40px", lg: "50px" }}
-        fontSize={{ base: "4xl", sm: "5xl", md: "5xl", lg: "5xl" }}
-        fontWeight="extrabold"
-        color="whiteAlpha.700"
+        mb="18px"
+        size="lg"
+        color="white"
       >
         Tools
       </Heading>
       <Grid
-        px={{ base: "80px", sm: "40px", md: "100px", lg: "100px" }}
+        w={{ base: "80%", sm: "75%", lg: "60%" }}
+        m="auto"
+        px={{ base: "20px", sm: "30px", md: "50px", lg: "70px" }}
         justifyContent="space-between"
         alignItems="center"
         gridTemplateColumns={{
-          base: "repeat(1,1fr)",
+          base: "repeat(2,1fr)",
           sm: "repeat(3,1fr)",
           md: "repeat(3,1fr)",
-          lg: "repeat(4,1fr)",
+          lg: "repeat(3,1fr)",
         }}
-        // gridTemplateColumns="repeat(auto-fill, minmax(350px, 1fr))"
-        gap={{ base: "20px", sm: "5%" }}
+        columnGap={{ base: "20px", sm: "3%" }}
+        rowGap="20px"
       >
         <SkillCards
           imgUrl="https://github.com/aniketpandey2912/aniketpandey2912.github.io/blob/master/src/Sections/Images/VSCode.png?raw=true"

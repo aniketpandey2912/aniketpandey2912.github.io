@@ -30,11 +30,11 @@ export const ProjectCards = ({
     <>
       <Card
         maxW="sm"
-        m="auto"
-        color="whiteAlpha.700"
+        mx="auto"
+        color="white"
         boxShadow="dark-lg"
-        transition="all 0.5s linear"
-        _hover={{ transform: "scale(1.03)", bgColor: "black" }}
+        transition="all 0.3s linear"
+        _hover={{ transform: "scale(0.99)" }}
       >
         {/* Image, description */}
         <CardBody>
@@ -43,18 +43,17 @@ export const ProjectCards = ({
             alt={title}
             borderRadius="lg"
             w="100%"
-            h="200px"
+            h="150px"
+            m="auto"
           />
 
           <Stack mt="6" spacing="3" color="white">
-            <Heading as="h4" size="md">
+            <Heading as="h4" size="sm">
               {title} Clone
             </Heading>
-            <Heading size="md">Description : </Heading>
+            <Heading size="sm">Description : </Heading>
 
-            <Text textAlign="justify" fontWeight="bold">
-              {description}
-            </Text>
+            <Text textAlign="justify">{description}</Text>
             <Flex gap={2} wrap={"wrap"}>
               {techs?.map((el, index) => (
                 <Badge

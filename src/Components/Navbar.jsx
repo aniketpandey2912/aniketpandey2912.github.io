@@ -34,6 +34,7 @@ const Navbar = () => {
       position="fixed"
       top="0"
       zIndex="1"
+      fontFamily={"sans-serif"}
     >
       <Flex
         // border="1px solid red"
@@ -45,8 +46,8 @@ const Navbar = () => {
         <Box p="4" bg="none">
           <Heading
             as="h1"
-            color="whiteAlpha.700"
-            size={{ base: "md", sm: "lg", md: "lg", lg: "lg" }}
+            color="white"
+            size={{ base: "md", sm: "md", md: "md", lg: "md" }}
           >
             {name}
           </Heading>
@@ -57,36 +58,36 @@ const Navbar = () => {
         <Show above="lg">
           <Flex p="4" bg="none" gap="4" alignItems="center">
             <Link smooth to="#home">
-              <Heading as="h4" size="md" color="whiteAlpha.700">
+              <Heading as="h4" size="sm" color="white">
                 Home
               </Heading>
             </Link>
 
             <Link smooth to="#about">
-              <Heading as="h4" size="md" color="whiteAlpha.700">
+              <Heading as="h4" size="sm" color="white">
                 About Me
               </Heading>
             </Link>
 
             <Link smooth to="#skills">
-              <Heading as="h4" size="md" color="whiteAlpha.700">
+              <Heading as="h4" size="sm" color="white">
                 Skills
               </Heading>
             </Link>
 
             <Link smooth to="#projects">
-              <Heading as="h4" size="md" color="whiteAlpha.700">
+              <Heading as="h4" size="sm" color="white">
                 Projects
               </Heading>
             </Link>
 
             <Link smooth to="#contacts">
-              <Heading as="h4" size="md" color="whiteAlpha.700">
+              <Heading as="h4" size="sm" color="white">
                 Contacts
               </Heading>
             </Link>
             <Box>
-              <ResumeButton />
+              <ResumeButton size={"md"} />
             </Box>
           </Flex>
         </Show>

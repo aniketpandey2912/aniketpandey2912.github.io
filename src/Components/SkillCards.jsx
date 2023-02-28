@@ -7,19 +7,17 @@ const SkillCards = (props) => {
     <Box
       border="1px solid none"
       boxShadow="dark-lg"
-      p="3"
+      py="3"
       rounded="md"
       bg="blackAlpha"
       color="white"
-      transition="all 0.5s linear"
-      _hover={{ transform: "scale(1.1)", bgColor: "cyan", color: "black" }}
+      transition="all 0.3s linear"
+      _hover={{ transform: "scale(0.97)", bgColor: "cyan", color: "black" }}
     >
       <Flex direction="column" justifyContent="center" alignItems="center">
         <Image src={imgUrl} alt={title} w="30%" />
 
-        <Heading as="h4" size="md">
-          {title}
-        </Heading>
+        <Heading fontSize={{ base: "sm", lg: "sm" }}>{title}</Heading>
       </Flex>
     </Box>
   );

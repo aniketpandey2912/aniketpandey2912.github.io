@@ -6,7 +6,7 @@ const GitStats = () => {
     <Box
       className="gitcont"
       bgColor="#404258"
-      color="whiteAlpha.600"
+      color="white"
       style={{
         display: "flex",
         flexDirection: "column",
@@ -16,26 +16,22 @@ const GitStats = () => {
       h="auto"
       // w="100%"
       py="100px"
+      fontFamily={"sans-serif"}
     >
-      <Heading
-        textAlign="center"
-        mb={{ base: "20px", sm: "30px", md: "40px", lg: "50px" }}
-        fontSize={{ base: "4xl", sm: "5xl", md: "5xl", lg: "5xl" }}
-        fontWeight="extrabold"
-        color="whiteAlpha.700"
-      >
+      <Heading textAlign="center" mb="18px" size="lg" color="white">
         Github
       </Heading>
       <Box
-        className="git"
+        // className="git"
         align="center"
         display="flex"
         flexDirection="column"
         rowGap="30px"
       >
         <Box
+          // border="1px solid red"
           textAlign={{ base: "left", sm: "center" }}
-          ml={{ base: "8%", sm: "15%", md: "30%" }}
+          m="auto"
         >
           <Calendar />
         </Box>
@@ -44,7 +40,7 @@ const GitStats = () => {
             align="left"
             src="https://github-readme-stats.vercel.app/api/top-langs?username=aniketpandey2912&show_icons=true&locale=en&layout=compact&theme=react&hide_border=true&bg_color=0D1117"
             alt="aniketpandey2912"
-            w={{ base: "80%", sm: "80%", md: "70%", lg: "70%" }}
+            w={{ base: "80%", sm: "60%", md: "50%", lg: "40%" }}
             m="auto"
           />
         </Box>
@@ -55,7 +51,7 @@ const GitStats = () => {
             marginTop="5px"
             src="https://github-readme-stats.vercel.app/api?username=aniketpandey2912&show_icons=true&locale=en&theme=react&hide_border=true&bg_color=0D1117"
             alt="aniketpandey2912"
-            w={{ base: "80%", sm: "80%", md: "70%", lg: "70%" }}
+            w={{ base: "80%", sm: "60%", md: "50%", lg: "40%" }}
             m="auto"
           />
         </Box>
@@ -64,7 +60,7 @@ const GitStats = () => {
             align="center"
             src="https://github-readme-streak-stats.herokuapp.com/?user=aniketpandey2912&hide_border=true&theme=react&hide_border=true&bg_color=0D1117"
             alt="aniketpandey2912"
-            w={{ base: "80%", sm: "80%", md: "70%", lg: "70%" }}
+            w={{ base: "80%", sm: "60%", md: "50%", lg: "40%" }}
             m="auto"
           />
         </Box>
@@ -73,7 +69,7 @@ const GitStats = () => {
             <Image
               alt="Aniket-Pandey Activity Graph"
               src="https://github-readme-activity-graph.cyclic.app/graph?username=aniketpandey2912&bg_color=0D1117&color=5BCDEC&line=5BCDEC&point=FFFFFF&hide_border=true"
-              w={{ base: "90%", sm: "90%", md: "70%", lg: "70%" }}
+              w={{ base: "90%", sm: "60%", md: "50%", lg: "40%" }}
               m="auto"
             />
           </Link>
@@ -84,7 +80,7 @@ const GitStats = () => {
               align="center"
               src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=aniketpandey2912&theme=dracula"
               alt="img"
-              w={{ base: "90%", sm: "90%", md: "70%", lg: "70%" }}
+              w={{ base: "90%", sm: "60%", md: "50%", lg: "40%" }}
               m="auto"
             />
           </Link>

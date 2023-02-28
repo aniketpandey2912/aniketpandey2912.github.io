@@ -11,17 +11,12 @@ const Projects = () => {
       id="projects"
       py="100px"
       bgColor="#6B728E"
+      fontFamily={"sans-serif"}
     >
-      <Heading
-        textAlign="center"
-        mb={{ base: "20px", sm: "30px", md: "40px", lg: "50px" }}
-        fontSize={{ base: "4xl", sm: "5xl", md: "5xl", lg: "5xl" }}
-        fontWeight="extrabold"
-        color="whiteAlpha.700"
-      >
+      <Heading textAlign="center" mb="18px" size="lg" color="white">
         Projects
       </Heading>
-      <Box w="90%" m="auto">
+      <Box w={{ base: "80%", sm: "75%", lg: "60%" }} m="auto">
         <ProjectsList />
       </Box>
     </Box>
@@ -35,9 +30,8 @@ export const ProjectsList = () => {
     <SimpleGrid
       spacing={4}
       templateColumns={{
-        base: "repeat(auto-fill, minmax(200px, 1fr))",
-        sm: "repeat(auto-fill, minmax(300px, 1fr))",
-        md: "repeat(auto-fill, minmax(350px, 1fr))",
+        base: "repeat(auto-fill, minmax(220px, 1fr))",
+        md: "repeat(auto-fill, minmax(300px, 1fr))",
       }}
     >
       {/* Movie List */}
@@ -67,7 +61,7 @@ const myProjects = [
     githubUrl: "https://github.com/aniketpandey2912/Zee5-Clone",
     deployedUrl: "https://creative-macaron-cbefa7.netlify.app/",
     description:
-      "It is a clone of website Zee5.com. It is a collaborative project. Built and executed in 5 days.",
+      "ZEE-5 is a subscription-based streaming service that allows our members to watch TV shows, movies, web series, and News on an internet-connected device. It was a collaborative project and there were 5 members. The duration was 5 days.",
     techs: ["React", "Chakra-Ui", "Javascript", "Html", "Css"],
   },
   {
@@ -78,8 +72,16 @@ const myProjects = [
     githubUrl: "https://github.com/bhav1kmaru/familiar-wilderness-510",
     deployedUrl: "https://apnamall.vercel.app/",
     description:
-      "It is a clone of website Paytmmall. It is a collaborative project. Built and executed in 5 days.",
-    techs: ["Next.Js", "React", "Chakra-Ui", "Javascript", "Html"],
+      "Apna Mall is an e-commerce website that allows users to shop for a wide range of products online. The website offers a wide range of collections of products, including electronics, fashion, home and kitchen appliances, beauty and personal care items, and more.",
+    techs: [
+      "Next.Js",
+      "React",
+      "Chakra-Ui",
+      "Javascript",
+      "Html",
+      "CSS",
+      "firebase-authentication",
+    ],
   },
   {
     id: 3,
@@ -89,7 +91,7 @@ const myProjects = [
     githubUrl: "https://github.com/aniketpandey2912/acceptable-popcorn-8320",
     deployedUrl: "https://aniketpandey2912-makes-great-sites.netlify.app/",
     description:
-      "It is a clone of website Lately.ai. It is an individual project. Built and executed in 5 days.",
+      "Lately is an AI-powered content generator and social media management platform that re-purposes long-form text, video, and podcasts. It is an individual project, built and executed in 5 days.",
     techs: ["React", "Chakra-Ui", "Javascript", "Html", "Css"],
   },
   {
@@ -100,7 +102,7 @@ const myProjects = [
     githubUrl: "https://github.com/aniketpandey2912/flawless-vegetable-3066",
     deployedUrl: "https://cult-fit-aniket-clone.netlify.app/",
     description:
-      "It is a clone of website Cult.fit. It is an individual project. Built and executed in 5 days.",
+      "Cult brings Meditation sessions and Goal based workout at your home. I also provides gym equipments. It is an individual project. Built and executed in 5 days.",
     techs: ["React", "Chakra-Ui", "Javascript", "Html", "Css"],
   },
   {
@@ -111,7 +113,7 @@ const myProjects = [
     githubUrl: "https://github.com/SubhadeepBid/alleged-partner-6503",
     deployedUrl: "https://super-pithivier-ba36c1.netlify.app/email_api",
     description:
-      "It is a clone of website Mailtrap. It is an individual project. Built and executed in 5 days.",
+      "Mailtrap is an Email Delivery Platform that allows customers to manage the email infrastructure in one place. It is an individual project. Built and executed in 5 days.",
     techs: ["Javascript", "Html", "Css"],
   },
 ];

@@ -13,20 +13,15 @@ const AboutMe = () => {
       py="100px"
       color="black"
       bgColor="#474E68"
+      fontFamily={"sans-serif"}
     >
-      <Heading
-        textAlign="center"
-        mb={{ base: "20px", sm: "30px", md: "40px", lg: "50px" }}
-        fontSize={{ base: "4xl", sm: "5xl", md: "5xl", lg: "5xl" }}
-        fontWeight="extrabold"
-        color="whiteAlpha.700"
-      >
+      <Heading textAlign="center" mb="18px" size="lg" color="white">
         About Me
       </Heading>
 
       {/* Description box */}
       <Square
-        w={{ base: "90%", sm: "90%", md: "80%", lg: "80%" }}
+        w={{ base: "80%", sm: "70%", md: "60%", lg: "50%" }}
         m="auto"
         display="flex"
         flexDirection="column"
@@ -34,21 +29,17 @@ const AboutMe = () => {
         p="6"
         rounded="md"
         bgColor="#474E68"
-        transition="all 0.5s linear"
-        _hover={{ transform: "scale(1.03)", bgColor: "black" }}
       >
         <Text
           fontSize={{
-            base: "22px",
-            sm: "24px",
-            md: "27px",
-            lg: "30px",
+            base: "16px",
+            sm: "17px",
+            md: "19px",
+            lg: "21px",
           }}
-          fontWeight="800"
-          color="whiteAlpha.700"
-          fontFamily="monospace"
+          color="white"
         >
-          Hi there, My name is {name} and I am from Lucknow, Uttar Pradesh. I am
+          Hi there, my name is {name} and I am from Lucknow, Uttar Pradesh. I am
           a dedicated and detail-oriented Full Stack Web Developer skilled in
           Javascript, HTML, CSS, and MERN stack. Has experience in building
           individual and group projects with 1200+ hours of coding and

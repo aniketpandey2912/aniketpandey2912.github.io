@@ -9,25 +9,20 @@ import { ContactsButton, ResumeButton } from "../Components/MyButton";
 function Contacts() {
   return (
     <Box
-      border="1px solid black"
+      // border="1px solid black"
       h="auto"
       // w="100%"
       id="contacts"
       py={{ base: "20px", sm: "30px", md: "40px", lg: "50px" }}
       bgColor="black"
+      fontFamily={"sans-serif"}
     >
-      <Heading
-        textAlign="center"
-        mb={{ base: "20px", sm: "30px", md: "40px", lg: "30px" }}
-        fontSize={{ base: "4xl", sm: "5xl", md: "5xl", lg: "5xl" }}
-        fontWeight="extrabold"
-        color="whiteAlpha.700"
-      >
+      <Heading textAlign="center" mb="18px" size="lg" color="white">
         Contacts
       </Heading>
 
       {/* Gmail & Mobile number */}
-      <Box textColor="whiteAlpha.700" mb="50px" color="blue">
+      <Box textColor="white" mb="50px">
         <Text textAlign="center" fontWeight="bold">
           G-mail : aniketpandey2912@gmail.com
         </Text>
@@ -41,7 +36,7 @@ function Contacts() {
         w={{ base: "80%", sm: "80%", md: "60%", lg: "50%" }}
         direction={{ base: "column", sm: "row" }}
         m="auto"
-        color="whiteAlpha.600"
+        color="white"
         rowGap="10px"
       >
         {/* Email */}
@@ -53,9 +48,7 @@ function Contacts() {
             _hover={{ textDecoration: "none" }}
           >
             <ContactsButton btnIcon={<TfiEmail />} btnColor="red" />
-            <Text textAlign="center" fontWeight="extrabold">
-              E-mail
-            </Text>
+            <Text textAlign="center">E-mail</Text>
           </Link>
         </Box>
         <Spacer />
@@ -69,9 +62,7 @@ function Contacts() {
             _hover={{ textDecoration: "none" }}
           >
             <ContactsButton btnIcon={<BsGithub />} btnColor="whiteAlpha" />
-            <Text textAlign="center" fontWeight="extrabold">
-              Github
-            </Text>
+            <Text textAlign="center">Github</Text>
           </Link>
         </Box>
         <Spacer />
@@ -85,9 +76,7 @@ function Contacts() {
             _hover={{ textDecoration: "none" }}
           >
             <ContactsButton btnIcon={<SlSocialLinkedin />} btnColor="blue" />
-            <Text textAlign="center" fontWeight="extrabold">
-              LinkedIn
-            </Text>
+            <Text textAlign="center">LinkedIn</Text>
           </Link>
         </Box>
         <Spacer />
@@ -95,9 +84,7 @@ function Contacts() {
         {/* Reume */}
         <Box>
           <ResumeButton />
-          <Text textAlign="center" fontWeight="extrabold">
-            Download Resume
-          </Text>
+          <Text textAlign="center">Download Resume</Text>
         </Box>
       </Flex>
 

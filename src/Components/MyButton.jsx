@@ -3,7 +3,7 @@ import React from "react";
 import { GrDownload } from "react-icons/gr";
 
 // Resume Button
-export const ResumeButton = () => {
+export const ResumeButton = ({ size }) => {
   const handleClick = () => {
     window.open(
       "https://drive.google.com/file/d/1mwZuiSiBNOQMzjeG6EO8Zkr3L2eLt3Rw/view"
@@ -12,20 +12,21 @@ export const ResumeButton = () => {
 
   return (
     <Link
-      href="Aniket-Pandey-Resume.pdf"
+      href="fw20_0540-Aniket-Pandey-Resume.pdf"
       target="_blank"
-      download="Aniket-Pandey-Resume.pdf"
+      download="fw20_0540-Aniket-Pandey-Resume.pdf"
       _hover={{ textDecoration: "none" }}
       textDecoration="none"
       onClick={handleClick}
+      fontFamily={"sans-serif"}
     >
       <Button
         type="download"
-        colorScheme="whiteAlpha"
-        size={{ base: "md", sm: "sm", md: "md", lg: "lg" }}
+        colorScheme="green"
+        size={{ base: "md", sm: "sm", md: "md", lg: size || "lg" }}
         w="100%"
         rightIcon={<GrDownload />}
-        color="black"
+        color="white"
       >
         Resume
       </Button>
@@ -40,10 +41,11 @@ export const ProjectButton = ({ text, btnIcon }) => {
       type="download"
       colorScheme="whiteAlpha"
       variant="solid"
-      size={{ base: "sm", sm: "sm", md: "md", lg: "lg" }} // Keep size medium for screen size below sm because adjusted by hide/show tag
+      size={{ base: "sm", sm: "sm", md: "md", lg: "md" }} // Keep size medium for screen size below sm because adjusted by hide/show tag
       w="100%"
       mt="15px"
       rightIcon={btnIcon}
+      fontFamily={"sans-serif"}
     >
       {text}
     </Button>
@@ -55,7 +57,7 @@ export const ContactsButton = ({ btnIcon, btnColor }) => {
   return (
     <Button
       type="download"
-      colorScheme={btnColor || "whiteAlpha"}
+      colorScheme={btnColor || "white"}
       variant="solid"
       size={{ base: "lg", sm: "sm", md: "md", lg: "lg" }}
       w="100%"
