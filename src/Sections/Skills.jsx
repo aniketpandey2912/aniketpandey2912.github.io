@@ -21,8 +21,8 @@ const Skills = () => {
         w={{ base: "80%", sm: "75%", lg: "60%" }}
         m="auto"
         px={{ base: "20px", sm: "30px", md: "50px", lg: "70px" }}
-        justifyContent="space-between"
-        alignItems="center"
+        // justifyContent="space-evenly"
+        // alignItems="center"
         gridTemplateColumns={{
           base: "repeat(2,1fr)",
           sm: "repeat(3,1fr)",
@@ -77,12 +77,12 @@ const Skills = () => {
         />
 
         <SkillCards
-          imgUrl="https://raw.githubusercontent.com/aniketpandey2912/aniketpandey2912.github.io/6b1ada18b6a6500390c6c41f5956238b872a2c1a/src/Sections/Images/cypress.svg"
+          imgUrl="https://iconape.com/wp-content/files/gj/370774/svg/370774.svg"
           title="Cypress"
         />
 
         <SkillCards
-          imgUrl="https://github.com/aniketpandey2912/aniketpandey2912.github.io/blob/master/src/Sections/Images/mongodb.png?raw=true"
+          imgUrl="https://raw.githubusercontent.com/aniketpandey2912/aniketpandey2912.github.io/14dee55bb1916923836506cd0d066c39a8f626c9/src/Sections/Images/node-js.svg"
           title="Node.js"
         />
 

@@ -5,7 +5,7 @@ const SkillCards = (props) => {
   const { imgUrl, title } = props;
   return (
     <Box
-      border="1px solid none"
+      // border="1px solid none"
       boxShadow="dark-lg"
       py="3"
       rounded="md"
