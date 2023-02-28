@@ -77,17 +77,17 @@ const Skills = () => {
         />
 
         <SkillCards
-          imgUrl="https://www.cypress.io/images/layouts/navbar-brand.svg"
+          imgUrl="https://raw.githubusercontent.com/aniketpandey2912/aniketpandey2912.github.io/6b1ada18b6a6500390c6c41f5956238b872a2c1a/src/Sections/Images/cypress.svg"
           title="Cypress"
         />
 
         <SkillCards
-          imgUrl="https://img.icons8.com/windows/256/node-js.png"
+          imgUrl="https://github.com/aniketpandey2912/aniketpandey2912.github.io/blob/master/src/Sections/Images/mongodb.png?raw=true"
           title="Node.js"
         />
 
         <SkillCards
-          imgUrl="https://img.icons8.com/ios/1x/express-js.png"
+          imgUrl="https://raw.githubusercontent.com/aniketpandey2912/aniketpandey2912.github.io/6b1ada18b6a6500390c6c41f5956238b872a2c1a/src/Sections/Images/express-js.svg"
           title="Express.js"
         />
 
