@@ -77,7 +77,7 @@ const Skills = () => {
         />
 
         <SkillCards
-          imgUrl="https://iconape.com/wp-content/files/gj/370774/svg/370774.svg"
+          imgUrl="https://raw.githubusercontent.com/aniketpandey2912/aniketpandey2912.github.io/009206031ec658553a9b1ce944fd1cbd8b76e785/src/Sections/Images/cypress.svg"
           title="Cypress"
         />
 
