@@ -102,7 +102,7 @@ const myProjects = [
     githubUrl: "https://github.com/aniketpandey2912/flawless-vegetable-3066",
     deployedUrl: "https://cult-fit-aniket-clone.netlify.app/",
     description:
-      "Cult brings Meditation sessions and Goal based workout at your home. I also provides gym equipments. It is an individual project. Built and executed in 5 days.",
+      "Cult brings Meditation sessions and Goal based workout at your home. It also provides gym equipments. It is an individual project. Built and executed in 5 days.",
     techs: ["React", "Chakra-Ui", "Javascript", "Html", "Css"],
   },
   {
