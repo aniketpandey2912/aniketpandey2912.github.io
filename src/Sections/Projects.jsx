@@ -55,17 +55,6 @@ export const ProjectsList = () => {
 const myProjects = [
   {
     id: 1,
-    title: "Zee5.com",
-    imgUrl:
-      "https://github.com/aniketpandey2912/aniketpandey2912.github.io/blob/master/src/Sections/Images/ZeeAppPoster.png?raw=true",
-    githubUrl: "https://github.com/rittik24/Zee5.com.clone",
-    deployedUrl: "https://comfy-dragon-c64b1f.netlify.app/",
-    description:
-      "ZEE-5 is a subscription-based streaming service that allows our members to watch TV shows, movies, web series, and News on an internet-connected device. It was a collaborative project and there were 5 members. The duration was 5 days.",
-    techs: ["React", "Chakra-Ui", "Javascript", "Html", "Css"],
-  },
-  {
-    id: 2,
     title: "Paytmmall.com",
     imgUrl:
       "https://github.com/aniketpandey2912/aniketpandey2912.github.io/blob/master/src/Sections/Images/ApnaMall.png?raw=true",
@@ -83,6 +72,18 @@ const myProjects = [
       "firebase-authentication",
     ],
   },
+  {
+    id: 2,
+    title: "Zee5.com",
+    imgUrl:
+      "https://github.com/aniketpandey2912/aniketpandey2912.github.io/blob/master/src/Sections/Images/ZeeAppPoster.png?raw=true",
+    githubUrl: "https://github.com/rittik24/Zee5.com.clone",
+    deployedUrl: "https://comfy-dragon-c64b1f.netlify.app/",
+    description:
+      "ZEE-5 is a subscription-based streaming service that allows our members to watch TV shows, movies, web series, and News on an internet-connected device. It was a collaborative project and there were 5 members. The duration was 5 days.",
+    techs: ["React", "Chakra-Ui", "Javascript", "Html", "Css"],
+  },
+
   {
     id: 3,
     title: "Lately.ai",
