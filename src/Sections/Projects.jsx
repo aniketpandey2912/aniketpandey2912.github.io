@@ -74,6 +74,24 @@ const myProjects = [
   },
   {
     id: 2,
+    title: "Flipkart.com",
+    imgUrl:
+      "https://user-images.githubusercontent.com/110104542/221482200-6a080f16-cfc0-442e-b61c-1567631b11c6.jpg",
+    deployedUrl: "https://flopcart-nine.vercel.app/",
+    description:
+      "A Flopkart website is an e-commerce platform. It allows users to browse and purchase a wide range of products such as electronics, fashion, and more. Like Flipkart, the Flopkart website typically includes features such as a user-friendly interface, product reviews and ratings, product search, user registration and login, user profile section, add to cart and checkout page.",
+    techs: [
+      "Node.js",
+      "Express.js",
+      "Mongodb",
+      "React",
+      "Chakra-Ui",
+      "Javascript",
+      "Cloudinary",
+    ],
+  },
+  {
+    id: 3,
     title: "Zee5.com",
     imgUrl:
       "https://github.com/aniketpandey2912/aniketpandey2912.github.io/blob/master/src/Sections/Images/ZeeAppPoster.png?raw=true",
@@ -85,7 +103,7 @@ const myProjects = [
   },
 
   {
-    id: 3,
+    id: 4,
     title: "Lately.ai",
     imgUrl:
       "https://github.com/aniketpandey2912/aniketpandey2912.github.io/blob/master/src/Sections/Images/Lately.png?raw=true",
@@ -96,7 +114,7 @@ const myProjects = [
     techs: ["React", "Chakra-Ui", "Javascript", "Html", "Css"],
   },
   {
-    id: 4,
+    id: 5,
     title: "Cult.fit",
     imgUrl:
       "https://github.com/aniketpandey2912/aniketpandey2912.github.io/blob/master/src/Sections/Images/Cult.png?raw=true",
@@ -107,7 +125,7 @@ const myProjects = [
     techs: ["React", "Chakra-Ui", "Javascript", "Html", "Css"],
   },
   {
-    id: 5,
+    id: 6,
     title: "Mailtrap",
     imgUrl:
       "https://github.com/aniketpandey2912/aniketpandey2912.github.io/blob/master/src/Sections/Images/Mailtrap.png?raw=true",

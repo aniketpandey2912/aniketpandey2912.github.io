@@ -48,19 +48,14 @@ export const ProjectCards = ({
           />
 
           <Stack mt="6" spacing="3" color="white">
-            <Heading as="h4" size="sm">
-              {title} Clone
-            </Heading>
+            <Heading size="sm">{title} Clone</Heading>
             <Heading size="sm">Description : </Heading>
 
-            <Text textAlign="justify">{description}</Text>
+            <Text fontSize="sm">{description}</Text>
+
             <Flex gap={2} wrap={"wrap"}>
               {techs?.map((el, index) => (
-                <Badge
-                  key={el}
-                  colorScheme={index % 2 === 0 ? "red" : "green"}
-                  fontWeight="bold"
-                >
+                <Badge key={el} colorScheme={index % 2 === 0 ? "red" : "green"}>
                   {el}
                 </Badge>
               ))}
