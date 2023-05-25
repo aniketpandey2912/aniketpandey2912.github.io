@@ -68,7 +68,7 @@ const GitStats = () => {
           <Link href="https://github.com/aniketpandey2912/github-readme-activity-graph">
             <Image
               alt="Aniket-Pandey Activity Graph"
-              src="https://github-readme-activity-graph.cyclic.app/graph?username=aniketpandey2912&bg_color=0D1117&color=5BCDEC&line=5BCDEC&point=FFFFFF&hide_border=true"
+              src="https://github-readme-activity-graph.vercel.app/graph?username=aniketpandey2912&bg_color=0D1117&color=5BCDEC&line=5BCDEC&point=FFFFFF&hide_border=true"
               w={{ base: "90%", sm: "60%", md: "50%", lg: "40%" }}
               m="auto"
             />
