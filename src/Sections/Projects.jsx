@@ -57,11 +57,11 @@ const myProjects = [
     id: 7,
     title: "Pantaloons.com",
     imgUrl:
-      "https://github.com/aniketpandey2912/aniketpandey2912.github.io/blob/master/src/Sections/Images/ApnaMall.png?raw=true",
+      "https://github.com/aniketpandey2912/aniketpandey2912.github.io/blob/master/src/Sections/Images/Pantaloons.png?raw=true",
     githubUrl: "https://github.com/aniketpandey2912/pantaloons-clone",
     deployedUrl: "https://pantaloons-clone.vercel.app/",
     description:
-      "Now shop hassle-free from the comfort of your couch or your office and get your outfits delivered carefully by our delivery agents along with the feature of cash on delivery with our online clothing stores. We also have gift options to satisfy your loved ones during your busy days. Visit our online shopping websites and scroll through our online clothing stores for the latest and most fashionable outfits.",
+      "Now shop hassle-free from the comfort of your couch or your office and get your outfits delivered carefully by our delivery agents along with the feature of cash on delivery with our online clothing stores. Visit our online shopping websites now.",
     techs: [
       "React",
       "Chakra-Ui",
@@ -91,25 +91,25 @@ const myProjects = [
       "firebase-authentication",
     ],
   },
-  {
-    id: 5,
-    title: "Flipkart.com",
-    imgUrl:
-      "https://github.com/aniketpandey2912/aniketpandey2912.github.io/blob/master/src/Sections/Images/Flopkart.png?raw=true",
-    githubUrl: "https://github.com/dhiraj19999/cold-lamp-3047-",
-    deployedUrl: "https://flopcart-nine.vercel.app/",
-    description:
-      "A Flopkart website is an e-commerce platform. It allows users to browse and purchase a wide range of products such as electronics, fashion, and more. Like Flipkart, the Flopkart website typically includes features such as a user-friendly interface, product reviews and ratings, product search, user registration and login, user profile section, add to cart and checkout page.",
-    techs: [
-      "Node.js",
-      "Express.js",
-      "Mongodb",
-      "React",
-      "Chakra-Ui",
-      "Javascript",
-      "Cloudinary",
-    ],
-  },
+  // {
+  //   id: 5,
+  //   title: "Flipkart.com",
+  //   imgUrl:
+  //     "https://github.com/aniketpandey2912/aniketpandey2912.github.io/blob/master/src/Sections/Images/Flopkart.png?raw=true",
+  //   githubUrl: "https://github.com/dhiraj19999/cold-lamp-3047-",
+  //   deployedUrl: "https://flopcart-nine.vercel.app/",
+  //   description:
+  //     "A Flopkart website is an e-commerce platform. It allows users to browse and purchase a wide range of products such as electronics, fashion, and more. Like Flipkart, the Flopkart website typically includes features such as a user-friendly interface, product reviews and ratings, product search, user registration and login, user profile section, add to cart and checkout page.",
+  //   techs: [
+  //     "Node.js",
+  //     "Express.js",
+  //     "Mongodb",
+  //     "React",
+  //     "Chakra-Ui",
+  //     "Javascript",
+  //     "Cloudinary",
+  //   ],
+  // },
   {
     id: 4,
     title: "Zee5.com",
