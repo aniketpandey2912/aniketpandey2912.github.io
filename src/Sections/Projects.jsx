@@ -54,7 +54,26 @@ export const ProjectsList = () => {
 // My Projects Details
 const myProjects = [
   {
-    id: 1,
+    id: 7,
+    title: "Pantaloons.com",
+    imgUrl:
+      "https://github.com/aniketpandey2912/aniketpandey2912.github.io/blob/master/src/Sections/Images/ApnaMall.png?raw=true",
+    githubUrl: "https://github.com/aniketpandey2912/pantaloons-clone",
+    deployedUrl: "https://pantaloons-clone.vercel.app/",
+    description:
+      "Now shop hassle-free from the comfort of your couch or your office and get your outfits delivered carefully by our delivery agents along with the feature of cash on delivery with our online clothing stores. We also have gift options to satisfy your loved ones during your busy days. Visit our online shopping websites and scroll through our online clothing stores for the latest and most fashionable outfits.",
+    techs: [
+      "React",
+      "Chakra-Ui",
+      "Typescript",
+      "Node",
+      "Express",
+      "MongoDB",
+      "Cloudinary",
+    ],
+  },
+  {
+    id: 6,
     title: "Paytmmall.com",
     imgUrl:
       "https://github.com/aniketpandey2912/aniketpandey2912.github.io/blob/master/src/Sections/Images/ApnaMall.png?raw=true",
@@ -73,7 +92,7 @@ const myProjects = [
     ],
   },
   {
-    id: 2,
+    id: 5,
     title: "Flipkart.com",
     imgUrl:
       "https://github.com/aniketpandey2912/aniketpandey2912.github.io/blob/master/src/Sections/Images/Flopkart.png?raw=true",
@@ -92,7 +111,7 @@ const myProjects = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     title: "Zee5.com",
     imgUrl:
       "https://github.com/aniketpandey2912/aniketpandey2912.github.io/blob/master/src/Sections/Images/ZeeAppPoster.png?raw=true",
@@ -104,7 +123,7 @@ const myProjects = [
   },
 
   {
-    id: 4,
+    id: 3,
     title: "Lately.ai",
     imgUrl:
       "https://github.com/aniketpandey2912/aniketpandey2912.github.io/blob/master/src/Sections/Images/Lately.png?raw=true",
@@ -115,7 +134,7 @@ const myProjects = [
     techs: ["React", "Chakra-Ui", "Javascript", "Html", "Css"],
   },
   {
-    id: 5,
+    id: 2,
     title: "Cult.fit",
     imgUrl:
       "https://github.com/aniketpandey2912/aniketpandey2912.github.io/blob/master/src/Sections/Images/Cult.png?raw=true",
@@ -126,7 +145,7 @@ const myProjects = [
     techs: ["React", "Chakra-Ui", "Javascript", "Html", "Css"],
   },
   {
-    id: 6,
+    id: 1,
     title: "Mailtrap",
     imgUrl:
       "https://github.com/aniketpandey2912/aniketpandey2912.github.io/blob/master/src/Sections/Images/Mailtrap.png?raw=true",
