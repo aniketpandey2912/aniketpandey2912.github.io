@@ -1,0 +1,12 @@
+node_modules
+build
+dist
+.git
+.github
+public
+yarn.lock
+package-lock.json
+coverage
+.DS_Store
+*.min.js
+*.min.css

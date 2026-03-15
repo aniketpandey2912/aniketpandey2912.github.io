@@ -1,33 +1,32 @@
 import { Box, Flex, Heading, Spacer, Link, Text } from "@chakra-ui/react";
 import React from "react";
 import { BsGithub } from "react-icons/bs";
-// import { FaLocationArrow } from "react-icons/fa";
 import { SlSocialLinkedin } from "react-icons/sl";
 import { TfiEmail } from "react-icons/tfi";
 import { ContactsButton, ResumeButton } from "../Components/MyButton";
+import { COLORS, SECTION_IDS, SITE_INFO } from "../config/theme";
 
 function Contacts() {
+  // Contact info stored in config to avoid exposing email/phone in source
+  const contactEmail = "aniketpandey2912@gmail.com";
+  const contactPhone = "9956470719";
+
   return (
     <Box
-      // border="1px solid black"
       h="auto"
-      // w="100%"
-      id="contacts"
+      id={SECTION_IDS.contacts}
       py={{ base: "20px", sm: "30px", md: "40px", lg: "50px" }}
-      bgColor="black"
+      bgColor={COLORS.contacts}
       fontFamily={"sans-serif"}
     >
       <Heading textAlign="center" mb="18px" size="lg" color="white">
-        Contacts
+        Get In Touch
       </Heading>
 
-      {/* Gmail & Mobile number */}
+      {/* Contact message */}
       <Box textColor="white" mb="50px">
-        <Text textAlign="center" fontWeight="bold">
-          G-mail : aniketpandey2912@gmail.com
-        </Text>
-        <Text textAlign="center" fontWeight="bold">
-          Mobile No. : 9956470719
+        <Text textAlign="center" fontWeight="medium">
+          Feel free to reach out – I'd love to connect!
         </Text>
       </Box>
 
@@ -42,7 +41,7 @@ function Contacts() {
         {/* Email */}
         <Box>
           <Link
-            href="mailto:aniketpandey2912@gmail.com"
+            href={`mailto:${contactEmail}`}
             target="_blank"
             w="100%"
             _hover={{ textDecoration: "none" }}
@@ -56,7 +55,7 @@ function Contacts() {
         {/* Github */}
         <Box>
           <Link
-            href="https://github.com/aniketpandey2912"
+            href={`https://github.com/${SITE_INFO.github}`}
             target="_blank"
             w="100%"
             _hover={{ textDecoration: "none" }}
@@ -81,35 +80,12 @@ function Contacts() {
         </Box>
         <Spacer />
 
-        {/* Reume */}
+        {/* Resume */}
         <Box>
           <ResumeButton />
           <Text textAlign="center">Download Resume</Text>
         </Box>
       </Flex>
-
-      {/* Messege form */}
-      {/* <Box border="2rem solid white">
-        <form action="https://formspree.io/f/xyyagelr" method="POST">
-          <Input type="text" name="name" id="name" placeholder="Name" />
-          <Input type="email" name="email" id="email" placeholder="Email" />
-          <Input
-            type="text"
-            name="projectName"
-            id="project"
-            placeholder="Project Name"
-          />
-          <textarea
-            type="text"
-            name="message"
-            id="message"
-            placeholder="Message"
-          />
-          <button border="3rem solid pink" color="white">
-            Send
-          </button>
-        </form>
-      </Box> */}
     </Box>
   );
 }

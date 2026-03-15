@@ -1,6 +1,7 @@
 import { Box, Flex, Heading, Hide, Image, Show } from "@chakra-ui/react";
 import React from "react";
 import { ResumeButton } from "../Components/MyButton";
+import { COLORS, RESPONSIVE_SIZES, SECTION_IDS } from "../config/theme";
 
 const Home = () => {
   return (
@@ -8,8 +9,8 @@ const Home = () => {
       border="none"
       h="auto"
       py="100px"
-      id="home"
-      bgColor="#404258" /*w="100%"*/
+      id={SECTION_IDS.home}
+      bgColor={COLORS.home}
       fontFamily={"sans-serif"}
     >
       <Heading textAlign="center" mb="18px" size="lg" color="white">
@@ -19,8 +20,9 @@ const Home = () => {
       {/* Appearing text */}
       <Heading as="h1" size="sm">
         <Image
-          src="https://readme-typing-svg.demolab.com/?lines=Hi! My name is Aniket Pandey; I am a Full-Stack%20Web%20Developer 👨🏻‍💻; Curious%20to%20learn%20new%20things !&font=Fira%20Code&center=true&width=440&height=45&color=#37bcf7&vCenter=true&size=20&pause=1000"
+          src={`https://readme-typing-svg.demolab.com/?lines=Hi! My name is Aniket Pandey; I am a Full-Stack%20Web%20Developer 👨🏻‍💻; Curious%20to%20learn%20new%20things !&font=Fira%20Code&center=true&width=440&height=45&color=${COLORS.primary.replace("#", "")}&vCenter=true&size=20&pause=1000`}
           m="auto"
+          alt="typing-effect"
         />
       </Heading>
 

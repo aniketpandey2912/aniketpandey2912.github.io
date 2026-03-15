@@ -1,18 +1,15 @@
 import { Box, Heading, Square, Text } from "@chakra-ui/react";
 import React from "react";
+import { COLORS, SECTION_IDS, SITE_INFO } from "../config/theme";
 
 const AboutMe = () => {
-  const name = "Aniket Pandey";
-
   return (
     <Box
-      // border="1px solid black"
       h="auto"
-      // w="100%"
-      id="about"
+      id={SECTION_IDS.about}
       py="100px"
       color="black"
-      bgColor="#474E68"
+      bgColor={COLORS.about}
       fontFamily={"sans-serif"}
     >
       <Heading textAlign="center" mb="18px" size="lg" color="white">
@@ -28,7 +25,7 @@ const AboutMe = () => {
         boxShadow="dark-lg"
         p="6"
         rounded="md"
-        bgColor="#474E68"
+        bgColor={COLORS.about}
       >
         <Text
           fontSize={{
@@ -39,15 +36,15 @@ const AboutMe = () => {
           }}
           color="white"
         >
-          Hi there, my name is {name} and I am from Lucknow, Uttar Pradesh. I am
-          a Software Engineer with 2+ years of experience building scalable web
-          applications using Angular, TypeScript, and REST APIs. Experienced in
-          developing enterprise-level platforms including monitoring systems,
-          supply chain tools, and automation platforms. Skilled in frontend
-          architecture, API integration, and collaborating with backend teams to
-          deliver high-performance applications. Strong problem-solving
-          abilities with hands-on experience working in Agile development
-          environments.
+          Hi there, my name is {SITE_INFO.author} and I am from Lucknow, Uttar
+          Pradesh. I am a Software Engineer with 2+ years of experience building
+          scalable web applications using Angular, TypeScript, and REST APIs.
+          Experienced in developing enterprise-level platforms including
+          monitoring systems, supply chain tools, and automation platforms.
+          Skilled in frontend architecture, API integration, and collaborating
+          with backend teams to deliver high-performance applications. Strong
+          problem-solving abilities with hands-on experience working in Agile
+          development environments.
         </Text>
       </Square>
     </Box>

@@ -1,16 +1,15 @@
 import { Box, Grid, Heading } from "@chakra-ui/react";
 import React from "react";
 import SkillCards from "../Components/SkillCards";
+import { COLORS, SECTION_IDS } from "../config/theme";
 
 const Skills = () => {
   return (
     <Box
-      // border="1px solid red"
       h="auto"
-      // w="100%"
-      id="skills"
+      id={SECTION_IDS.skills}
       py="100px"
-      bgColor="#50577A"
+      bgColor={COLORS.skills}
       fontFamily={"sans-serif"}
     >
       {/* Skills */}

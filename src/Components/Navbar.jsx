@@ -19,8 +19,7 @@ import {
 import React from "react";
 import { NavHashLink as Link } from "react-router-hash-link";
 import { ResumeButton } from "./MyButton";
-
-const name = "<Aniket Pandey/>";
+import { COLORS, NAV_LINKS, SITE_INFO } from "../config/theme";
 
 const Navbar = () => {
   return (
@@ -30,7 +29,7 @@ const Navbar = () => {
       border="none"
       marginInline="auto"
       paddingInline={{ base: "10px", sm: "24px" }}
-      bgColor="black"
+      bgColor={COLORS.navbar}
       position="fixed"
       top="0"
       zIndex="1"
@@ -49,7 +48,7 @@ const Navbar = () => {
             color="white"
             size={{ base: "md", sm: "md", md: "md", lg: "md" }}
           >
-            {name}
+            {SITE_INFO.brandName}
           </Heading>
         </Box>
         <Spacer />
@@ -57,35 +56,13 @@ const Navbar = () => {
         {/* menu options */}
         <Show above="lg">
           <Flex p="4" bg="none" gap="4" alignItems="center">
-            <Link smooth to="#home">
-              <Heading as="h4" size="sm" color="white">
-                Home
-              </Heading>
-            </Link>
-
-            <Link smooth to="#about">
-              <Heading as="h4" size="sm" color="white">
-                About Me
-              </Heading>
-            </Link>
-
-            <Link smooth to="#skills">
-              <Heading as="h4" size="sm" color="white">
-                Skills
-              </Heading>
-            </Link>
-
-            <Link smooth to="#projects">
-              <Heading as="h4" size="sm" color="white">
-                Projects
-              </Heading>
-            </Link>
-
-            <Link smooth to="#contacts">
-              <Heading as="h4" size="sm" color="white">
-                Contacts
-              </Heading>
-            </Link>
+            {NAV_LINKS.map((link) => (
+              <Link key={link.id} smooth to={`#${link.id}`}>
+                <Heading as="h4" size="sm" color="white">
+                  {link.label}
+                </Heading>
+              </Link>
+            ))}
             <Box>
               <ResumeButton size={"md"} />
             </Box>
@@ -100,46 +77,19 @@ const Navbar = () => {
               aria-label="Options"
               icon={<HamburgerIcon />}
               variant="outline"
-              bg="black"
+              bg={COLORS.navbar}
               color="whiteAlpha.700"
             />
             <MenuList>
-              <Link smooth to="#home">
-                <MenuItem icon={<FaHome />}>
-                  <Heading as="h4" size="md">
-                    Home
-                  </Heading>
-                </MenuItem>
-              </Link>
-              <Link smooth to="#about">
-                <MenuItem icon={<SiAboutdotme />}>
-                  <Heading as="h4" size="md">
-                    About Me
-                  </Heading>
-                </MenuItem>
-              </Link>
-              <Link smooth to="#skills">
-                <MenuItem icon={<GiSkills />}>
-                  <Heading as="h4" size="md">
-                    Skills
-                  </Heading>
-                </MenuItem>
-              </Link>
-              <Link smooth to="#projects">
-                <MenuItem icon={<FaProjectDiagram />}>
-                  <Heading as="h4" size="md">
-                    Projects
-                  </Heading>
-                </MenuItem>
-              </Link>
-
-              <Link smooth to="#contacts">
-                <MenuItem icon={<MdContacts />}>
-                  <Heading as="h4" size="md">
-                    Contacts
-                  </Heading>
-                </MenuItem>
-              </Link>
+              {NAV_LINKS.map((link) => (
+                <Link key={link.id} smooth to={`#${link.id}`}>
+                  <MenuItem>
+                    <Heading as="h4" size="md">
+                      {link.label}
+                    </Heading>
+                  </MenuItem>
+                </Link>
+              ))}
             </MenuList>
           </Menu>
         </Show>
