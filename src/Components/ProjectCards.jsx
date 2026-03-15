@@ -7,15 +7,16 @@ import {
   Card,
   CardBody,
   CardFooter,
-  Divider,
   Stack,
   Badge,
   Flex,
+  Tooltip,
 } from "@chakra-ui/react";
 import React from "react";
 import { ProjectButton } from "./MyButton";
 import { BsGithub } from "react-icons/bs";
-import { GrDeploy } from "react-icons/gr";
+import { FiExternalLink } from "react-icons/fi";
+import { useTheme } from "../context/ThemeContext";
 
 // Project card function
 export const ProjectCards = ({
@@ -26,52 +27,74 @@ export const ProjectCards = ({
   description,
   techs,
 }) => {
+  const { colors } = useTheme();
   return (
     <>
       <Card
         maxW="sm"
         mx="auto"
-        color="white"
+        color={colors.text}
+        bgColor={colors.hover}
         boxShadow="dark-lg"
+        borderWidth="1px"
+        borderColor={colors.border}
         transition="all 0.3s linear"
-        _hover={{ transform: "scale(0.99)" }}
+        h="100%"
+        display="flex"
+        flexDirection="column"
       >
-        {/* Image, description */}
-        <CardBody>
-          <Image
-            src={imgUrl}
-            alt={title}
-            borderRadius="lg"
-            w="100%"
-            h="150px"
-            m="auto"
-          />
+        {/* Image */}
+        <Image
+          src={imgUrl}
+          alt={title}
+          borderRadius="lg"
+          w="100%"
+          h="120px"
+          objectFit="cover"
+        />
 
-          <Stack mt="6" spacing="3" color="white">
-            <Heading size="sm">{title} Clone</Heading>
-            <Heading size="sm">Description : </Heading>
+        {/* Content */}
+        <CardBody pb="2" flex="1">
+          <Stack spacing="1.5">
+            <Heading size="sm" noOfLines={1}>{title}</Heading>
+            <Tooltip label={description} bg={colors.textMuted} color={colors.text} borderRadius="md" maxW="200px">
+              <Text
+                fontSize="xs"
+                color={colors.textSecondary}
+                lineHeight="1.4"
+                noOfLines={2}
+                cursor="help"
+              >
+                {description}
+              </Text>
+            </Tooltip>
 
-            <Text fontSize="sm">{description}</Text>
-
-            <Flex gap={2} wrap={"wrap"}>
-              {techs?.map((el, index) => (
-                <Badge key={el} colorScheme={index % 2 === 0 ? "red" : "green"}>
-                  {el}
-                </Badge>
-              ))}
+            <Flex gap={1} wrap="wrap" pt="0.5">
+              <Tooltip label={techs?.join(", ")} bg={colors.textMuted} color={colors.text} borderRadius="md" maxW="250px">
+                <Flex gap={1} wrap="wrap" w="100%">
+                  {techs?.slice(0, 3).map((el, index) => (
+                    <Badge key={el} fontSize="10px" colorScheme={index % 2 === 0 ? "red" : "green"}>
+                      {el}
+                    </Badge>
+                  ))}
+                  {techs && techs.length > 3 && (
+                    <Badge fontSize="10px" colorScheme="gray" cursor="help">
+                      +{techs.length - 3}
+                    </Badge>
+                  )}
+                </Flex>
+              </Tooltip>
             </Flex>
           </Stack>
         </CardBody>
 
-        <Divider />
-
         {/* Buttons */}
-        <CardFooter>
-          <ButtonGroup spacing="2">
+        <CardFooter pt="0" pb="2">
+          <ButtonGroup spacing="1" w="100%" size="sm">
             <Link
               href={`${githubUrl}`}
               target="_blank"
-              w="100%"
+              flex="1"
               _hover={{ textDecoration: "none" }}
             >
               <ProjectButton text="Github" btnIcon={<BsGithub />}>
@@ -81,10 +104,10 @@ export const ProjectCards = ({
             <Link
               href={`${deployedUrl}`}
               target="_blank"
-              w="100%"
+              flex="1"
               _hover={{ textDecoration: "none" }}
             >
-              <ProjectButton text="Live" btnIcon={<GrDeploy />}>
+              <ProjectButton text="Live" btnIcon={<FiExternalLink />}>
                 Live
               </ProjectButton>
             </Link>

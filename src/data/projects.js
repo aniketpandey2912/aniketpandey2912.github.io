@@ -1,5 +1,6 @@
 /**
  * Project Data - Centralized project list for the portfolio
+ * Learning projects and portfolio projects
  */
 
 export const projectsList = [
