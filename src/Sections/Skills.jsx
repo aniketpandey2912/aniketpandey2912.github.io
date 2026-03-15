@@ -47,7 +47,7 @@ const Skills = () => {
         />
 
         <SkillCards
-          imgUrl="https://raw.githubusercontent.com/aniketpandey2912/aniketpandey2912.github.io/885e23da24e8a4cab660f069f264950c1550660e/src/Sections/Images/Angular.svg"
+          imgUrl="https://github.com/aniketpandey2912/aniketpandey2912.github.io/blob/master/src/Sections/Images/Angular.png?raw=true"
           title="Angular"
         />
         <SkillCards
