@@ -67,7 +67,7 @@ const Home = () => {
         {/* MERN Image */}
         <Box w={{ base: "80%", sm: "71%", md: "71%", lg: "50%" }}>
           <Image
-            src="https://codesandbox.io/api/v1/sandboxes/171d3/screenshot.png"
+            src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfpH5jkmDQ7HelQcaPh5lMKwfW2Bx6I0hDhlg3mrNwXlLXO1lmwofaYS_1a8211DPJqhb-z5cLtDYfFkjA1EUKfNOEfTJCSWUKXSIY4pams0g4xGBWrqYMLC_yy1izmQgj1SwM6vg?key=8Icro23PLHSLRmHd-kIQoO0c"
             h={{ base: "150px", sm: "170px", md: "220px", lg: "350px" }}
             w={{ base: "100%", sm: "100%", md: "100%", lg: "100%" }}
             m="auto"

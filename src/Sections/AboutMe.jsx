@@ -40,10 +40,14 @@ const AboutMe = () => {
           color="white"
         >
           Hi there, my name is {name} and I am from Lucknow, Uttar Pradesh. I am
-          a dedicated and detail-oriented Full Stack Web Developer skilled in
-          Javascript, HTML, CSS, and MERN stack. Has experience in building
-          individual and group projects with 1200+ hours of coding and
-          problem-solving in DSA.
+          a Software Engineer with 2+ years of experience building scalable web
+          applications using Angular, TypeScript, and REST APIs. Experienced in
+          developing enterprise-level platforms including monitoring systems,
+          supply chain tools, and automation platforms. Skilled in frontend
+          architecture, API integration, and collaborating with backend teams to
+          deliver high-performance applications. Strong problem-solving
+          abilities with hands-on experience working in Agile development
+          environments.
         </Text>
       </Square>
     </Box>

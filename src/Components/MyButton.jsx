@@ -6,15 +6,15 @@ import { GrDownload } from "react-icons/gr";
 export const ResumeButton = ({ size }) => {
   const handleClick = () => {
     window.open(
-      "https://drive.google.com/file/d/1mwZuiSiBNOQMzjeG6EO8Zkr3L2eLt3Rw/view"
+      "https://drive.google.com/file/d/1DTOAehRPQ2Buwl-ESmgDvfpDVyk4sDO9/view",
     );
   };
 
   return (
     <Link
-      href="fw20_0540-Aniket-Pandey-Resume.pdf"
+      href="Aniket-Pandey-Resume.pdf"
       target="_blank"
-      download="fw20_0540-Aniket-Pandey-Resume.pdf"
+      download="Aniket-Pandey-Resume.pdf"
       _hover={{ textDecoration: "none" }}
       textDecoration="none"
       onClick={handleClick}
