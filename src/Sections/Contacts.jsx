@@ -4,9 +4,11 @@ import { BsGithub } from "react-icons/bs";
 import { SlSocialLinkedin } from "react-icons/sl";
 import { TfiEmail } from "react-icons/tfi";
 import { ContactsButton, ResumeButton } from "../Components/MyButton";
-import { COLORS, SECTION_IDS, SITE_INFO } from "../config/theme";
+import { SECTION_IDS, SITE_INFO } from "../config/theme";
+import { useTheme } from "../context/ThemeContext";
 
 function Contacts() {
+  const theme = useTheme();
   // Contact info stored in config to avoid exposing email/phone in source
   const contactEmail = "aniketpandey2912@gmail.com";
   const contactPhone = "9956470719";
@@ -16,7 +18,7 @@ function Contacts() {
       h="auto"
       id={SECTION_IDS.contacts}
       py={{ base: "20px", sm: "30px", md: "40px", lg: "50px" }}
-      bgColor={COLORS.contacts}
+      bgColor={theme.contacts}
       fontFamily={"sans-serif"}
     >
       <Heading textAlign="center" mb="18px" size="lg" color="white">

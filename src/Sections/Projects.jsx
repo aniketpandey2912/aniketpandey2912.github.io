@@ -1,19 +1,21 @@
 import { Box, Heading, SimpleGrid } from "@chakra-ui/react";
 import React from "react";
 import { ProjectCards } from "../Components/ProjectCards";
-import { COLORS, SECTION_IDS } from "../config/theme";
+import { SECTION_IDS } from "../config/theme";
 import { projectsList } from "../data/projects";
+import { useTheme } from "../context/ThemeContext";
 
 const Projects = () => {
+  const theme = useTheme();
   return (
     <Box
       h="auto"
       id={SECTION_IDS.projects}
       py="100px"
-      bgColor={COLORS.projects}
+      bgColor={theme.projects}
       fontFamily={"sans-serif"}
     >
-      <Heading textAlign="center" mb="18px" size="lg" color="white">
+      <Heading textAlign="center" mb="18px" size="lg" color={theme.textPrimary}>
         Projects
       </Heading>
       <Box w={{ base: "80%", sm: "75%", lg: "60%" }} m="auto">

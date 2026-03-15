@@ -1,18 +1,20 @@
 import { Box, Heading, Square, Text } from "@chakra-ui/react";
 import React from "react";
-import { COLORS, SECTION_IDS, SITE_INFO } from "../config/theme";
+import { SECTION_IDS, SITE_INFO } from "../config/theme";
+import { useTheme } from "../context/ThemeContext";
 
 const AboutMe = () => {
+  const theme = useTheme();
   return (
     <Box
       h="auto"
       id={SECTION_IDS.about}
       py="100px"
-      color="black"
-      bgColor={COLORS.about}
+      color={theme.black}
+      bgColor={theme.about}
       fontFamily={"sans-serif"}
     >
-      <Heading textAlign="center" mb="18px" size="lg" color="white">
+      <Heading textAlign="center" mb="18px" size="lg" color={theme.textPrimary}>
         About Me
       </Heading>
 
@@ -25,7 +27,7 @@ const AboutMe = () => {
         boxShadow="dark-lg"
         p="6"
         rounded="md"
-        bgColor={COLORS.about}
+        bgColor={theme.about}
       >
         <Text
           fontSize={{
@@ -34,7 +36,7 @@ const AboutMe = () => {
             md: "19px",
             lg: "21px",
           }}
-          color="white"
+          color={theme.textPrimary}
         >
           Hi there, my name is {SITE_INFO.author} and I am from Lucknow, Uttar
           Pradesh. I am a Software Engineer with 2+ years of experience building

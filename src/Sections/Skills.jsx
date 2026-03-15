@@ -1,19 +1,21 @@
 import { Box, Grid, Heading } from "@chakra-ui/react";
 import React from "react";
 import SkillCards from "../Components/SkillCards";
-import { COLORS, SECTION_IDS } from "../config/theme";
+import { SECTION_IDS } from "../config/theme";
+import { useTheme } from "../context/ThemeContext";
 
 const Skills = () => {
+  const theme = useTheme();
   return (
     <Box
       h="auto"
       id={SECTION_IDS.skills}
       py="100px"
-      bgColor={COLORS.skills}
+      bgColor={theme.skills}
       fontFamily={"sans-serif"}
     >
       {/* Skills */}
-      <Heading textAlign="center" mb="18px" size="lg" color="white">
+      <Heading textAlign="center" mb="18px" size="lg" color={theme.textPrimary}>
         Skills
       </Heading>
       <Grid
@@ -46,7 +48,7 @@ const Skills = () => {
         />
 
         <SkillCards
-          imgUrl="https://github.com/aniketpandey2912/aniketpandey2912.github.io/blob/master/src/Sections/Images/Angular.png?raw=true"
+          imgUrl="https://raw.githubusercontent.com/aniketpandey2912/aniketpandey2912.github.io/master/src/Sections/Images/Angular.png"
           title="Angular"
         />
         <SkillCards
@@ -75,7 +77,7 @@ const Skills = () => {
         />
 
         <SkillCards
-          imgUrl="https://github.com/aniketpandey2912/aniketpandey2912.github.io/blob/master/src/Sections/Images/Typescript.png?raw=true"
+          imgUrl="https://raw.githubusercontent.com/aniketpandey2912/aniketpandey2912.github.io/master/src/Sections/Images/Typescript.png"
           title="Typescript"
         />
 
@@ -106,7 +108,7 @@ const Skills = () => {
         mt={{ base: "50px", sm: "60px", md: "80px", lg: "100px" }}
         mb="18px"
         size="lg"
-        color="white"
+        color={theme.textPrimary}
       >
         Tools
       </Heading>
@@ -126,36 +128,36 @@ const Skills = () => {
         rowGap="20px"
       >
         <SkillCards
-          imgUrl="https://github.com/aniketpandey2912/aniketpandey2912.github.io/blob/master/src/Sections/Images/VSCode.png?raw=true"
+          imgUrl="https://raw.githubusercontent.com/aniketpandey2912/aniketpandey2912.github.io/master/src/Sections/Images/VSCode.png"
           title="VS Code"
         />
         <SkillCards
-          imgUrl="https://github.com/aniketpandey2912/aniketpandey2912.github.io/blob/master/src/Sections/Images/GitHub.png?raw=true"
+          imgUrl="https://raw.githubusercontent.com/aniketpandey2912/aniketpandey2912.github.io/master/src/Sections/Images/GitHub.png"
           title="Github"
         />
 
         <SkillCards
-          imgUrl="https://github.com/aniketpandey2912/aniketpandey2912.github.io/blob/master/src/Sections/Images/Git.png?raw=true"
+          imgUrl="https://raw.githubusercontent.com/aniketpandey2912/aniketpandey2912.github.io/master/src/Sections/Images/Git.png"
           title="Git"
         />
 
         <SkillCards
-          imgUrl="https://github.com/aniketpandey2912/aniketpandey2912.github.io/blob/master/src/Sections/Images/Netlify.png?raw=true"
+          imgUrl="https://raw.githubusercontent.com/aniketpandey2912/aniketpandey2912.github.io/master/src/Sections/Images/Netlify.png"
           title="Netlify"
         />
 
         <SkillCards
-          imgUrl="https://github.com/aniketpandey2912/aniketpandey2912.github.io/blob/master/src/Sections/Images/Vercel.png?raw=true"
+          imgUrl="https://raw.githubusercontent.com/aniketpandey2912/aniketpandey2912.github.io/master/src/Sections/Images/Vercel.png"
           title="Vercel"
         />
 
         <SkillCards
-          imgUrl="https://github.com/aniketpandey2912/aniketpandey2912.github.io/blob/master/src/Sections/Images/Codesandbox.png?raw=true"
+          imgUrl="https://raw.githubusercontent.com/aniketpandey2912/aniketpandey2912.github.io/master/src/Sections/Images/Codesandbox.png"
           title="CodeSandbox"
         />
 
         <SkillCards
-          imgUrl="https://github.com/aniketpandey2912/aniketpandey2912.github.io/blob/master/src/Sections/Images/Replit.png?raw=true"
+          imgUrl="https://raw.githubusercontent.com/aniketpandey2912/aniketpandey2912.github.io/master/src/Sections/Images/Replit.png"
           title="Replit"
         />
       </Grid>

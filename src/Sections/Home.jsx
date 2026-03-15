@@ -1,26 +1,29 @@
 import { Box, Flex, Heading, Hide, Image, Show } from "@chakra-ui/react";
 import React from "react";
 import { ResumeButton } from "../Components/MyButton";
-import { COLORS, RESPONSIVE_SIZES, SECTION_IDS } from "../config/theme";
+import { RESPONSIVE_SIZES, SECTION_IDS } from "../config/theme";
+import { useTheme } from "../context/ThemeContext";
 
 const Home = () => {
+  const theme = useTheme();
+
   return (
     <Box
       border="none"
       h="auto"
       py="100px"
       id={SECTION_IDS.home}
-      bgColor={COLORS.home}
+      bgColor={theme.home}
       fontFamily={"sans-serif"}
     >
-      <Heading textAlign="center" mb="18px" size="lg" color="white">
+      <Heading textAlign="center" mb="18px" size="lg" color={theme.textPrimary}>
         Home
       </Heading>
 
       {/* Appearing text */}
       <Heading as="h1" size="sm">
         <Image
-          src={`https://readme-typing-svg.demolab.com/?lines=Hi! My name is Aniket Pandey; I am a Full-Stack%20Web%20Developer 👨🏻‍💻; Curious%20to%20learn%20new%20things !&font=Fira%20Code&center=true&width=440&height=45&color=${COLORS.primary.replace("#", "")}&vCenter=true&size=20&pause=1000`}
+          src={`https://readme-typing-svg.demolab.com/?lines=Hi! My name is Aniket Pandey; I am a Full-Stack%20Web%20Developer 👨🏻‍💻; Curious%20to%20learn%20new%20things !&font=Fira%20Code&center=true&width=440&height=45&color=${theme.primary.replace("#", "")}&vCenter=true&size=20&pause=1000`}
           m="auto"
           alt="typing-effect"
         />
@@ -47,7 +50,7 @@ const Home = () => {
           p={{ base: "0", sm: "6", md: "6", lg: "6" }}
         >
           <Image
-            src="https://github.com/aniketpandey2912/aniketpandey2912.github.io/blob/master/src/Sections/Images/ProfilePic3.jpeg?raw=true"
+            src="https://raw.githubusercontent.com/aniketpandey2912/aniketpandey2912.github.io/master/src/Sections/Images/ProfilePic3.jpeg"
             alt="prof-avatar"
             h={{ base: "140px", sm: "160px", md: "180px", lg: "220px" }}
             m="10px auto"

@@ -16,6 +16,7 @@ import React from "react";
 import { ProjectButton } from "./MyButton";
 import { BsGithub } from "react-icons/bs";
 import { GrDeploy } from "react-icons/gr";
+import { useTheme } from "../context/ThemeContext";
 
 // Project card function
 export const ProjectCards = ({
@@ -26,12 +27,14 @@ export const ProjectCards = ({
   description,
   techs,
 }) => {
+  const theme = useTheme();
+
   return (
     <>
       <Card
         maxW="sm"
         mx="auto"
-        color="white"
+        color={theme.textPrimary}
         boxShadow="dark-lg"
         transition="all 0.3s linear"
         _hover={{ transform: "scale(0.99)" }}
@@ -47,11 +50,13 @@ export const ProjectCards = ({
             m="auto"
           />
 
-          <Stack mt="6" spacing="3" color="white">
+          <Stack mt="6" spacing="3" color={theme.textPrimary}>
             <Heading size="sm">{title} Clone</Heading>
             <Heading size="sm">Description : </Heading>
 
-            <Text fontSize="sm">{description}</Text>
+            <Text fontSize="sm" color={theme.textSecondary}>
+              {description}
+            </Text>
 
             <Flex gap={2} wrap={"wrap"}>
               {techs?.map((el, index) => (

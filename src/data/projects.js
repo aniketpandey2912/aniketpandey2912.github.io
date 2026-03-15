@@ -7,7 +7,7 @@ export const projectsList = [
     id: 7,
     title: "Pantaloons.com",
     imgUrl:
-      "https://github.com/aniketpandey2912/aniketpandey2912.github.io/blob/master/src/Sections/Images/Pantaloons.png?raw=true",
+      "https://raw.githubusercontent.com/aniketpandey2912/aniketpandey2912.github.io/master/src/Sections/Images/Pantaloons.png",
     githubUrl: "https://github.com/aniketpandey2912/pantaloons-clone",
     deployedUrl: "https://pantaloons-clone.vercel.app/",
     description:
@@ -26,7 +26,7 @@ export const projectsList = [
     id: 6,
     title: "Paytmmall.com",
     imgUrl:
-      "https://github.com/aniketpandey2912/aniketpandey2912.github.io/blob/master/src/Sections/Images/ApnaMall.png?raw=true",
+      "https://raw.githubusercontent.com/aniketpandey2912/aniketpandey2912.github.io/master/src/Sections/Images/ApnaMall.png",
     githubUrl: "https://github.com/bhav1kmaru/familiar-wilderness-510",
     deployedUrl: "https://apnamall.vercel.app/",
     description:
@@ -45,7 +45,7 @@ export const projectsList = [
     id: 4,
     title: "Zee5.com",
     imgUrl:
-      "https://github.com/aniketpandey2912/aniketpandey2912.github.io/blob/master/src/Sections/Images/ZeeAppPoster.png?raw=true",
+      "https://raw.githubusercontent.com/aniketpandey2912/aniketpandey2912.github.io/master/src/Sections/Images/ZeeAppPoster.png",
     githubUrl: "https://github.com/rittik24/Zee5.com.clone",
     deployedUrl: "https://comfy-dragon-c64b1f.netlify.app/",
     description:
@@ -57,7 +57,7 @@ export const projectsList = [
     id: 3,
     title: "Lately.ai",
     imgUrl:
-      "https://github.com/aniketpandey2912/aniketpandey2912.github.io/blob/master/src/Sections/Images/Lately.png?raw=true",
+      "https://raw.githubusercontent.com/aniketpandey2912/aniketpandey2912.github.io/master/src/Sections/Images/Lately.png",
     githubUrl: "https://github.com/aniketpandey2912/acceptable-popcorn-8320",
     deployedUrl: "https://aniketpandey2912-makes-great-sites.netlify.app/",
     description:
@@ -68,7 +68,7 @@ export const projectsList = [
     id: 2,
     title: "Cult.fit",
     imgUrl:
-      "https://github.com/aniketpandey2912/aniketpandey2912.github.io/blob/master/src/Sections/Images/Cult.png?raw=true",
+      "https://raw.githubusercontent.com/aniketpandey2912/aniketpandey2912.github.io/master/src/Sections/Images/Cult.png",
     githubUrl: "https://github.com/aniketpandey2912/flawless-vegetable-3066",
     deployedUrl: "https://cult-fit-aniket-clone.netlify.app/",
     description:
@@ -79,7 +79,7 @@ export const projectsList = [
     id: 1,
     title: "Mailtrap",
     imgUrl:
-      "https://github.com/aniketpandey2912/aniketpandey2912.github.io/blob/master/src/Sections/Images/Mailtrap.png?raw=true",
+      "https://raw.githubusercontent.com/aniketpandey2912/aniketpandey2912.github.io/master/src/Sections/Images/Mailtrap.png",
     githubUrl: "https://github.com/SubhadeepBid/alleged-partner-6503",
     deployedUrl: "https://super-pithivier-ba36c1.netlify.app/email_api",
     description:

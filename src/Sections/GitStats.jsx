@@ -1,15 +1,17 @@
 import { Box, Heading, Image, Link } from "@chakra-ui/react";
 import Calendar from "./GitCalender";
-import { COLORS, SITE_INFO, SECTION_IDS } from "../config/theme";
+import { SITE_INFO, SECTION_IDS } from "../config/theme";
+import { useTheme } from "../context/ThemeContext";
 
 const GitStats = () => {
+  const theme = useTheme();
   const githubUsername = SITE_INFO.github;
 
   return (
     <Box
       className="gitcont"
-      bgColor={COLORS.gitStats}
-      color="white"
+      bgColor={theme.gitStats}
+      color={theme.textPrimary}
       style={{
         display: "flex",
         flexDirection: "column",
@@ -20,7 +22,7 @@ const GitStats = () => {
       py="100px"
       fontFamily={"sans-serif"}
     >
-      <Heading textAlign="center" mb="18px" size="lg" color="white">
+      <Heading textAlign="center" mb="18px" size="lg" color={theme.textPrimary}>
         Github
       </Heading>
       <Box
@@ -60,8 +62,8 @@ const GitStats = () => {
         <Box>
           <Image
             align="center"
-            src={`https://github-readme-streak-stats.herokuapp.com/?user=${githubUsername}&hide_border=true&theme=react&hide_border=true&bg_color=0D1117`}
-            alt={githubUsername}
+            src={`https://github-profile-summary-cards.vercel.app/api/cards/stats?username=${githubUsername}&theme=dracula`}
+            alt="GitHub Stats"
             w={{ base: "80%", sm: "60%", md: "50%", lg: "40%" }}
             m="auto"
           />

@@ -1,5 +1,7 @@
 import React from "react";
 import { Box, Heading, Text } from "@chakra-ui/react";
+import { useTheme } from "../context/ThemeContext";
+import { THEME_VARIANTS } from "../config/theme";
 
 /**
  * Error Boundary - Catches JavaScript errors in child components
@@ -21,6 +23,8 @@ class ErrorBoundary extends React.Component {
 
   render() {
     if (this.state.hasError) {
+      // Use dark theme colors since this is a class component that can't use hooks
+      const theme = THEME_VARIANTS.dark;
       return (
         <Box
           w="100%"
@@ -29,11 +33,11 @@ class ErrorBoundary extends React.Component {
           flexDirection="column"
           justifyContent="center"
           alignItems="center"
-          bgColor="#1a1a1a"
-          color="white"
+          bgColor={theme.home}
+          color={theme.textPrimary}
           p="4"
         >
-          <Heading size="lg" mb="4" color="#37bcf7">
+          <Heading size="lg" mb="4" color={theme.primary}>
             Oops! Something went wrong
           </Heading>
           <Text fontSize="md" textAlign="center" maxW="500px" mb="4">
@@ -41,14 +45,14 @@ class ErrorBoundary extends React.Component {
           </Text>
           {process.env.NODE_ENV === "development" && (
             <Box
-              bgColor="#2a2a2a"
+              bgColor={theme.gray800}
               p="4"
               borderRadius="md"
               maxW="600px"
               overflow="auto"
               maxH="200px"
             >
-              <Text fontSize="sm" fontFamily="monospace" color="#ff6b6b">
+              <Text fontSize="sm" fontFamily="monospace" color={theme.error}>
                 {this.state.error?.toString()}
               </Text>
             </Box>
@@ -62,3 +66,4 @@ class ErrorBoundary extends React.Component {
 }
 
 export default ErrorBoundary;
+
