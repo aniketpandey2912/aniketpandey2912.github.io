@@ -159,46 +159,57 @@ const Skills = () => {
     <Box
       h="auto"
       id={SECTION_IDS.skills}
-      py="80px"
+      py={{ base: "60px", sm: "70px", md: "80px", lg: "100px" }}
       bgColor={colors.skills}
       fontFamily={"sans-serif"}
     >
-      <Heading textAlign="center" mb="50px" size="lg" color={colors.text}>
+      <Heading
+        textAlign="center"
+        mb={{ base: "30px", sm: "40px", md: "50px" }}
+        size="lg"
+        color={colors.text}
+      >
         Skills
       </Heading>
 
       <Grid
-        w={{ base: "90%", sm: "90%", lg: "85%" }}
+        w={{ base: "95%", sm: "90%", md: "90%", lg: "85%" }}
         m="auto"
         gridTemplateColumns={{
           base: "1fr",
           md: "repeat(2, 1fr)",
+          lg: "repeat(2, 1fr)",
         }}
-        gap="50px"
+        gap={{ base: "30px", sm: "40px", md: "50px" }}
       >
         {skillCategories.map((category) => (
           <Box
             key={category.title}
-            p="8"
+            p={{ base: "6", sm: "7", md: "8" }}
             rounded="lg"
             bgColor={colors.surface}
             borderWidth="1px"
             borderColor={colors.border}
             boxShadow={`0 2px 8px ${colors.primary}10`}
           >
-            <Heading textAlign="center" mb="20px" size="sm" color={colors.text}>
+            <Heading
+              textAlign="center"
+              mb={{ base: "16px", sm: "20px" }}
+              size="sm"
+              color={colors.text}
+            >
               {category.title}
             </Heading>
             <Grid
               w="100%"
               gridTemplateColumns={{
-                base: "repeat(3,1fr)",
-                sm: "repeat(4,1fr)",
-                md: "repeat(5,1fr)",
-                lg: "repeat(6,1fr)",
+                base: "repeat(3, 1fr)",
+                sm: "repeat(4, 1fr)",
+                md: "repeat(5, 1fr)",
+                lg: "repeat(6, 1fr)",
               }}
-              columnGap={{ base: "15px", sm: "20px" }}
-              rowGap="12px"
+              columnGap={{ base: "12px", sm: "16px", md: "20px" }}
+              rowGap={{ base: "10px", sm: "12px", md: "16px" }}
             >
               {category.skills.map((skill) => (
                 <SkillCards

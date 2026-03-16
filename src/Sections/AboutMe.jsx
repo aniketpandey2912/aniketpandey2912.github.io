@@ -9,9 +9,9 @@ import {
   Grid,
 } from "@chakra-ui/react";
 import React from "react";
-import { SECTION_IDS, SITE_INFO } from "../config/theme";
+import { SECTION_IDS } from "../config/theme";
 import { useTheme } from "../context/ThemeContext";
-import { FaBriefcase, FaCode, FaGraduationCap } from "react-icons/fa";
+import { FaBriefcase, FaCode } from "react-icons/fa";
 
 const AboutMe = () => {
   const { colors } = useTheme();
@@ -19,39 +19,45 @@ const AboutMe = () => {
     <Box
       h="auto"
       id={SECTION_IDS.about}
-      py="100px"
+      py={{ base: "60px", sm: "70px", md: "80px", lg: "100px" }}
       color={colors.text}
       bgColor={colors.about}
       fontFamily={"sans-serif"}
     >
-      <Heading textAlign="center" mb="50px" size="lg" color={colors.text}>
+      <Heading
+        textAlign="center"
+        mb={{ base: "30px", sm: "40px", md: "50px" }}
+        size="lg"
+        color={colors.text}
+      >
         About Me
       </Heading>
 
       <VStack
-        w={{ base: "90%", sm: "85%", md: "75%", lg: "65%" }}
+        w={{ base: "95%", sm: "90%", md: "85%", lg: "75%" }}
         m="auto"
-        spacing="40px"
+        spacing={{ base: "30px", sm: "40px", md: "50px" }}
       >
         {/* Bio Section */}
         <Box
-          p="8"
+          p={{ base: "6", sm: "7", md: "8" }}
           rounded="lg"
           bgColor={colors.surface}
           borderWidth="1px"
           borderColor={colors.border}
           boxShadow={`0 4px 20px ${colors.primary}15`}
+          w="100%"
         >
           <VStack spacing="4" align="start">
             <Heading size="md" color={colors.primary}>
-              👋 Hi, I'm Aniket Pandey
+              👋 Hi, I&apos;m Aniket Pandey
             </Heading>
             <Text
               fontSize={{ base: "sm", md: "md" }}
               lineHeight="1.8"
               color={colors.text}
             >
-              I'm a{" "}
+              I&apos;m a{" "}
               <span style={{ color: colors.primary, fontWeight: "bold" }}>
                 Software Engineer
               </span>{" "}
@@ -62,7 +68,7 @@ const AboutMe = () => {
               <span style={{ color: colors.primary, fontWeight: "bold" }}>
                 2+ years
               </span>{" "}
-              of professional experience, I've contributed to multiple
+              of professional experience, I&apos;ve contributed to multiple
               enterprise-level platforms that serve thousands of users.
             </Text>
           </VStack>
@@ -70,7 +76,7 @@ const AboutMe = () => {
 
         {/* Core Competencies */}
         <Box
-          p="8"
+          p={{ base: "6", sm: "7", md: "8" }}
           rounded="lg"
           bgColor={colors.surface}
           borderWidth="1px"
@@ -78,7 +84,7 @@ const AboutMe = () => {
           boxShadow={`0 4px 20px ${colors.primary}15`}
           w="100%"
         >
-          <VStack spacing="6" align="start" w="100%">
+          <VStack spacing={{ base: "4", sm: "6" }} align="start" w="100%">
             <HStack spacing="3">
               <Box color={colors.primary} fontSize="lg">
                 <FaCode />
@@ -195,7 +201,12 @@ const AboutMe = () => {
                   }}
                   _active={{ transform: "translateY(-2px)" }}
                 >
-                  <Text fontSize="xs" fontWeight="600" color={colors.primary} textAlign="center">
+                  <Text
+                    fontSize="xs"
+                    fontWeight="600"
+                    color={colors.primary}
+                    textAlign="center"
+                  >
                     {skill}
                   </Text>
                 </Box>
@@ -230,10 +241,10 @@ const AboutMe = () => {
           >
             <VStack spacing="3" align="start">
               <Heading size="sm" color={colors.primary}>
-                Let's Connect!
+                Let&apos;s Connect!
               </Heading>
               <Text fontSize={{ base: "sm", md: "md" }} color={colors.text}>
-                I'm always interested in discussing new projects, creative
+                I&apos;m always interested in discussing new projects, creative
                 ideas, or any opportunities to contribute to impactful
                 solutions. Feel free to reach out!
               </Text>

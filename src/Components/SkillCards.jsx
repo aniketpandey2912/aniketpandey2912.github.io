@@ -11,13 +11,13 @@ const SkillCards = (props) => {
       direction="column"
       justifyContent="center"
       alignItems="center"
-      gap="2"
+      gap={{ base: "1.5", sm: "2" }}
     >
       <Image
         src={imgUrl}
         alt={title}
-        w="40px"
-        h="40px"
+        w={{ base: "36px", sm: "40px", md: "44px" }}
+        h={{ base: "36px", sm: "40px", md: "44px" }}
         objectFit="contain"
         filter={
           isDarkMode
@@ -28,12 +28,13 @@ const SkillCards = (props) => {
       />
 
       <Heading
-        fontSize={{ base: "sm", md: "md" }}
+        fontSize={{ base: "xs", sm: "sm", md: "md" }}
         textAlign="center"
         fontWeight="600"
-        lineHeight="1.4"
+        lineHeight="1.3"
         letterSpacing="0.3px"
         color={colors.text}
+        noOfLines={2}
       >
         {title}
       </Heading>

@@ -1,4 +1,13 @@
-import { Box, Flex, Heading, Text, VStack, Image, Link, HStack } from "@chakra-ui/react";
+import {
+  Box,
+  Flex,
+  Heading,
+  Text,
+  VStack,
+  Image,
+  Link,
+  HStack,
+} from "@chakra-ui/react";
 import React from "react";
 import { ResumeButton } from "../Components/MyButton";
 import { SECTION_IDS } from "../config/theme";
@@ -12,7 +21,8 @@ const Home = () => {
   return (
     <Box
       h="auto"
-      py={{ base: "40px", sm: "50px", md: "70px", lg: "90px" }}
+      pt={{ base: "80px", sm: "100px", md: "120px", lg: "140px" }}
+      pb={{ base: "40px", sm: "50px", md: "70px", lg: "90px" }}
       id={SECTION_IDS.home}
       bgColor={colors.home}
       fontFamily="sans-serif"
@@ -23,8 +33,8 @@ const Home = () => {
         position: "absolute",
         top: isDarkMode ? "-50%" : "-30%",
         right: isDarkMode ? "-10%" : "10%",
-        width: "400px",
-        height: "400px",
+        width: "300px",
+        height: "300px",
         bg: isDarkMode ? "rgba(167,139,250,0.08)" : "rgba(14,165,233,0.05)",
         borderRadius: "50%",
         filter: "blur(60px)",
@@ -35,10 +45,10 @@ const Home = () => {
       {/* Main Content Section */}
       <Flex
         direction={{ base: "column", md: "row" }}
-        align="center"
+        align={{ base: "center", md: "center" }}
         justify="center"
-        gap={{ base: "25px", md: "40px", lg: "50px" }}
-        w={{ base: "90%", sm: "85%", md: "90%", lg: "85%" }}
+        gap={{ base: "20px", sm: "30px", md: "40px", lg: "50px" }}
+        w={{ base: "95%", sm: "90%", md: "90%", lg: "85%" }}
         maxW="1200px"
         m="auto"
         position="relative"
@@ -66,16 +76,17 @@ const Home = () => {
                 w="100%"
                 h="100%"
                 objectFit="cover"
-                boxShadow={isDarkMode ? "0 8px 32px rgba(167,139,250,0.2)" : "0 8px 32px rgba(14,165,233,0.15)"}
+                boxShadow={
+                  isDarkMode
+                    ? "0 8px 32px rgba(167,139,250,0.2)"
+                    : "0 8px 32px rgba(14,165,233,0.15)"
+                }
               />
             </Box>
           </Box>
 
           {/* Contact Info Below Profile Picture */}
-          <HStack
-            spacing="12px"
-            fontSize={{ base: "xs", sm: "sm" }}
-          >
+          <HStack spacing="12px" fontSize={{ base: "xs", sm: "sm" }}>
             <Link
               href={`mailto:${contactEmail}`}
               color={colors.primary}
@@ -120,7 +131,8 @@ const Home = () => {
             color={colors.text}
             lineHeight="1.2"
           >
-            Hi, I'm <span style={{ color: colors.primary }}>Aniket Pandey</span>
+            Hi, I&apos;m{" "}
+            <span style={{ color: colors.primary }}>Aniket Pandey</span>
           </Heading>
 
           <Heading
@@ -137,7 +149,10 @@ const Home = () => {
             color={colors.textTertiary}
             lineHeight="1.6"
           >
-            2+ years building enterprise web applications with Angular, TypeScript, and REST APIs. Experienced in scalable platform development, backend integration, and high-performance frontend solutions in Agile environments.
+            2+ years building enterprise web applications with Angular,
+            TypeScript, and REST APIs. Experienced in scalable platform
+            development, backend integration, and high-performance frontend
+            solutions in Agile environments.
           </Text>
 
           {/* CTA Button */}
@@ -148,7 +163,14 @@ const Home = () => {
       </Flex>
 
       {/* Divider */}
-      <Box w="50px" h="0.5px" bgColor={colors.border} m="30px auto 0" position="relative" zIndex={1} />
+      <Box
+        w="50px"
+        h="0.5px"
+        bgColor={colors.border}
+        m="30px auto 0"
+        position="relative"
+        zIndex={1}
+      />
 
       {/* Stats Section */}
       <Flex

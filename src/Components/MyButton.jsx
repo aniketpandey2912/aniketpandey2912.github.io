@@ -12,7 +12,7 @@ const commonButtonStyles = {
 };
 
 // Resume Button
-export const ResumeButton = ({ size }) => {
+export const ResumeButton = () => {
   const { colors } = useTheme();
 
   const handleClick = () => {
@@ -31,10 +31,12 @@ export const ResumeButton = ({ size }) => {
       onClick={handleClick}
     >
       <Button
-        size={{ base: "md", sm: "sm", md: "md", lg: size || "lg" }}
+        size={{ base: "md", sm: "lg", md: "lg" }}
         w="100%"
+        px={{ base: "4", sm: "6" }}
+        py={{ base: "2.5", sm: "3" }}
         rightIcon={
-          <AiOutlineDownload style={{ color: "white", fontSize: "20px" }} />
+          <AiOutlineDownload style={{ color: "white", fontSize: "18px" }} />
         }
         color="white"
         bg={colors.primary}
@@ -54,9 +56,13 @@ export const ProjectButton = ({ text, btnIcon }) => {
 
   return (
     <Button
-      size="sm"
+      size={{ base: "xs", sm: "sm", md: "sm" }}
       w="100%"
-      rightIcon={btnIcon && React.cloneElement(btnIcon, { color: "white" })}
+      px={{ base: "2", sm: "3" }}
+      py={{ base: "1.5", sm: "2" }}
+      rightIcon={
+        btnIcon && React.cloneElement(btnIcon, { color: "white", size: "16px" })
+      }
       bg={colors.primary}
       color="white"
       {...commonButtonStyles}
@@ -73,8 +79,6 @@ export const ProjectButton = ({ text, btnIcon }) => {
 
 // Contact Button - Theme-aware with consistent styling
 export const ContactsButton = ({ btnIcon, btnColor }) => {
-  const { isDarkMode } = useTheme();
-
   // Define button color configs
   const colorConfig = {
     red: { bg: "#EF4444", hover: "#DC2626" },
@@ -86,8 +90,10 @@ export const ContactsButton = ({ btnIcon, btnColor }) => {
 
   return (
     <Button
-      size={{ base: "lg", sm: "sm", md: "md", lg: "lg" }}
+      size={{ base: "md", sm: "lg", md: "lg" }}
       w="100%"
+      px={{ base: "4", sm: "6" }}
+      py={{ base: "2.5", sm: "3" }}
       bg={config.bg}
       color="white"
       {...commonButtonStyles}

@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
 
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family:
@@ -14,10 +22,27 @@ body {
   line-height: 1.6;
   letter-spacing: 0.3px;
   color: #f0f0f0;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 
 code {
   font-family:
     source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+/* Responsive Typography */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  body {
+    font-size: 15px;
+    line-height: 1.6;
+  }
 }

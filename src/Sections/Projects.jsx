@@ -11,14 +11,19 @@ const Projects = () => {
     <Box
       h="auto"
       id={SECTION_IDS.projects}
-      py="100px"
+      py={{ base: "60px", sm: "70px", md: "80px", lg: "100px" }}
       bgColor={colors.projects}
       fontFamily={"sans-serif"}
     >
-      <Heading textAlign="center" mb="50px" size="lg" color={colors.text}>
+      <Heading
+        textAlign="center"
+        mb={{ base: "30px", sm: "40px", md: "50px" }}
+        size="lg"
+        color={colors.text}
+      >
         Projects
       </Heading>
-      <Box w={{ base: "90%", sm: "85%", md: "75%", lg: "65%" }} m="auto">
+      <Box w={{ base: "95%", sm: "90%", md: "85%", lg: "75%" }} m="auto">
         <ProjectsList />
       </Box>
     </Box>
@@ -30,12 +35,12 @@ export default Projects;
 export const ProjectsList = () => {
   return (
     <SimpleGrid
-      spacing={4}
+      spacing={{ base: "16px", sm: "20px", md: "24px", lg: "32px" }}
       templateColumns={{
-        base: "repeat(auto-fill, minmax(100px, 1fr))",
-        sm: "repeat(auto-fill, minmax(130px, 1fr))",
-        md: "repeat(auto-fill, minmax(165px, 1fr))",
-        lg: "repeat(auto-fill, minmax(190px, 1fr))",
+        base: "1fr",
+        sm: "repeat(2, 1fr)",
+        md: "repeat(3, 1fr)",
+        lg: "repeat(4, 1fr)",
       }}
     >
       {projectsList &&

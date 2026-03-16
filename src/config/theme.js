@@ -30,7 +30,7 @@ export const LIGHT_COLORS = {
   skills: "#FFFFFF",
   projects: "#F8FAFC",
   gitStats: "#FFFFFF",
-  contacts: "#F8FAFC",
+  contacts: "#F1F5F9",
   navbar: "#FFFFFF",
 
   // Text Colors - Dark slate for excellent contrast
@@ -111,7 +111,7 @@ export const DARK_COLORS = {
   skills: "#0A0A0A",
   projects: "#1A1A1A",
   gitStats: "#0A0A0A",
-  contacts: "#0A0A0A",
+  contacts: "#1A1A1A",
   navbar: "#0A0A0A",
 
   // Text Colors - Pure white to light gray
